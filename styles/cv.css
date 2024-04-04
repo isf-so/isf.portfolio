@@ -237,7 +237,7 @@ button:hover {
     
     .section__title {
       letter-spacing: 2px;
-      color: #54AFE4;
+      color: #464646;
       font-weight: bold;
       margin-bottom: 10px;
       text-transform: uppercase;
@@ -295,13 +295,13 @@ button:hover {
         display: inline-block;  
         width: 20px;
         height: 20px;
-        background: #C3DEF3;
+        background: #0000004c;
         border-radius: 20px;
         margin-right: 3px;
       }
       
       input:checked + label {
-        background: #79A9CE;
+        background: #1d1d1d;
       }
     }
   }
