@@ -171,14 +171,14 @@ button:hover {
 
 
 .container {
-    max-width: 700px;   
+    max-width: 670px;   
     background: #fff;
     margin: 0px auto 0px; 
     box-shadow: 1px 1px 2px #DAD7D7;
     border-radius: 3px;  
     padding: 40px;
-    margin-top: 1000px;
-    margin-bottom: 100px;
+    margin-top: 95vh;
+    margin-bottom: 10%;
   }
   
   .header {
