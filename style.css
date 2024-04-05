@@ -23,9 +23,10 @@ footer {
     position:fixed;
     bottom: 18px;
     display: flex;
-    z-index: 9999;
     align-items: center;
+    
 }
+
 
 
 /* ===== Scrollbar CSS ===== */
