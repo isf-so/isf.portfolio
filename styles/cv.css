@@ -275,7 +275,7 @@ button::before {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80vw;
+  width: 70vw;
   height: 100vh;
   margin-left: 6vw;
   -webkit-transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
@@ -284,7 +284,7 @@ button::before {
 
 @media (max-width: 1200px) {
   .container {
-    width: 90vw;
+    width: 80vw;
     margin-left: 5vw;
     -webkit-transform: rotateX(20deg) rotateZ(-7deg) rotateY(12deg) scale3d(1, 1, -0.9);
             transform: rotateX(20deg) rotateZ(-7deg) rotateY(12deg) scale3d(1, 1, -0.9);
@@ -293,7 +293,7 @@ button::before {
 
 @media (max-width: 768px) {
   .container {
-    width: 95vw;
+    width: 70vw;
     margin-left: 2.5vw;
     -webkit-transform: rotateX(15deg) rotateZ(-5deg) rotateY(10deg) scale3d(1, 1, -0.9);
             transform: rotateX(15deg) rotateZ(-5deg) rotateY(10deg) scale3d(1, 1, -0.9);
