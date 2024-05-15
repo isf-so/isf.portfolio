@@ -1,133 +1,139 @@
 body {
-    margin: 0;
-    overflow-x: hidden;
-    background: white;
+  margin: 0;
+  overflow-x: hidden;
+  background: white;
 }
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    font-family: Avenir, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
+  color: rgb(202, 202, 202);
 }
 
 
 footer {
-    position:fixed;
-    bottom: 18px;
-    display: flex;
-    align-items: center;
-    
+  position: fixed;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+
 }
 
 
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: none;
-    scrollbar-color: #8f54a0 #ffffff;
-  }
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #8f54a0 #ffffff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #8f54a0;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
 .et-hero-tabs,
 .et-slide {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    background-color: #eee;
-    text-align: center;
-    padding: 0 2em;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #eee;
+  text-align: center;
+  padding: 0 2em;
 
-    h1 {
-        font-size: 2rem;
-        margin: 0;
-        letter-spacing: 0.6rem;
-    }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.6rem;
+  }
 
-    h3 {
-        font-size: 1rem;
+  h3 {
+    font-size: 1rem;
 
-        opacity: 0.6;
-    }
+    opacity: 0.6;
+  }
 }
+
 .et-hero-tabs-container {
-    display: flex;
-    flex-direction: row;
-    position: fixed; /* Remplacez sticky par fixed */
-    top: 0; /* Fixez l'élément en haut */
-    left: 0; /* Fixez l'élément à gauche (peut être ajusté selon vos besoins) */
-    width: 100%;
-    height: 70px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: #eee;
-    z-index: 10;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  /* Remplacez sticky par fixed */
+  top: 0;
+  /* Fixez l'élément en haut */
+  left: 0;
+  /* Fixez l'élément à gauche (peut être ajusté selon vos besoins) */
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
-.et-hero-tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color: #000;
-    background-color: #eee;
-    letter-spacing: 0.1rem;
-    transition: all 0.5s ease;
-    font-size: 0.8rem;
 
-    &:hover {
-        color: white;
-        background: rgba(0, 0, 0, 0.8);
-        transition: all 0.5s ease;
-    }
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  background-color: #eee;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+
+  &:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+  }
 }
 
 .et-hero-tab-slider {
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 6px;
-    background: #000000;
-    transition: left 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #000000;
+  transition: left 0.3s ease;
 }
 
 @media (min-width: 800px) {
 
-    .et-hero-tabs,
-    .et-slide {
-        h1 {
-            font-size: 3rem;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
+  .et-hero-tabs,
+  .et-slide {
+    h1 {
+      font-size: 3rem;
     }
 
-    .et-hero-tab {
-        font-size: 1rem;
+    h3 {
+      font-size: 1rem;
     }
+  }
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
 }
 
 
@@ -135,8 +141,8 @@ footer {
 
 
 
-.video{
-    height: 25vh;
+.video {
+  height: 25vh;
 }
 
 
@@ -145,86 +151,86 @@ footer {
 .item-1,
 .item-2,
 .item-3 {
-    position: absolute;
-    display: block;
-    right: 0;
-    animation-duration: 20s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  position: absolute;
+  display: block;
+  right: 0;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .item-1 {
-    animation-name: anim-1;
+  animation-name: anim-1;
 }
 
 .item-2 {
-    animation-name: anim-2;
+  animation-name: anim-2;
 }
 
 .item-3 {
-    animation-name: anim-3;
+  animation-name: anim-3;
 }
 
 @keyframes anim-1 {
 
-    0%,
-    8.3% {
-        left: -100%;
-        opacity: 0;
-    }
+  0%,
+  8.3% {
+    left: -100%;
+    opacity: 0;
+  }
 
-    8.3%,
-    25% {
-        left: 25%;
-        opacity: 1;
-    }
+  8.3%,
+  25% {
+    left: 25%;
+    opacity: 1;
+  }
 
-    33.33%,
-    100% {
-        left: 110%;
-        opacity: 0;
-    }
+  33.33%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 @keyframes anim-2 {
 
-    0%,
-    33.33% {
-        left: -100%;
-        opacity: 0;
-    }
+  0%,
+  33.33% {
+    left: -100%;
+    opacity: 0;
+  }
 
-    41.63%,
-    58.29% {
-        left: 25%;
-        opacity: 1;
-    }
+  41.63%,
+  58.29% {
+    left: 25%;
+    opacity: 1;
+  }
 
-    66.66%,
-    100% {
-        left: 110%;
-        opacity: 0;
-    }
+  66.66%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 @keyframes anim-3 {
 
-    0%,
-    66.66% {
-        left: -100%;
-        opacity: 0;
-    }
+  0%,
+  66.66% {
+    left: -100%;
+    opacity: 0;
+  }
 
-    74.96%,
-    91.62% {
-        left: 25%;
-        opacity: 1;
-    }
+  74.96%,
+  91.62% {
+    left: 25%;
+    opacity: 1;
+  }
 
-    100% {
-        left: 110%;
-        opacity: 0;
-    }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 
@@ -232,19 +238,19 @@ footer {
 
 
 button {
-    max-width:10px;
+  max-width: 10px;
 
-    padding: 1px 30px;
-    color: #000000;
-    background-color: #eee;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 1px 30px;
+  color: #000000;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #000000;
-    color: #FFF;
+  background-color: #000000;
+  color: #FFF;
 }
 
 
@@ -254,179 +260,199 @@ button:hover {
 
 
 :root {
-    --bg-color: #ddd;
-    --p-color: #ddd;
-    --a-color: #ddd;
-    --a-hover-color: #ddd;
-    --citation-bg-color: #ddd;
-    --citation-p-color: #ddd;
-    --citation-a-color: #ddd;
-    --citation-a-hover-color: #ddd;
-  }
-  
+  --bg-color: #fff;
+  --p-color: #fff;
+  --a-color: #fff;
+  --a-hover-color: #fff;
+  --citation-bg-color: #fff;
+  --citation-p-color: #fff;
+  --citation-a-color: #fff;
+  --citation-a-hover-color: #fff;
+}
 
-  
-  .wrapper1 {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 700px;
+
+
+.wrapper1 {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 700px;
 }
 
 .wrapper {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    right: 200px;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 200px;
 }
 
 /* Media query pour cacher les éléments lorsque la largeur est inférieure à 500px */
 @media (max-width: 500px) {
-    .wrapper1, .wrapper {
-        display: none;
-    }
+
+  .wrapper1,
+  .wrapper {
+    display: none;
+  }
 }
 
-  
-  .ciao-frames {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
-    justify-content: space-evenly;
-    width: 80%;
 
-    max-width: 800px;
-    height: 400px;
+.ciao-frames {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  justify-content: space-evenly;
+  width: 80%;
+
+  max-width: 800px;
+  height: 400px;
+}
+
+.frame {
+  width: 400px;
+  height: 200px;
+  margin: 2px;
+  display: block;
+  background: transparent url("photo/ciao-frames.png") 0 0 no-repeat;
+}
+
+#one {
+  -webkit-animation: letterI 1s steps(12) infinite;
+  animation: letterI 1s steps(12) infinite;
+
+}
+
+#two {
+  -webkit-animation: letterS 1s steps(12) infinite;
+  animation: letterS 1s steps(12) infinite;
+}
+
+#three {
+  -webkit-animation: letterF 1s steps(12) infinite;
+  animation: letterF 1s steps(12) infinite;
+}
+
+#four {
+  -webkit-animation: letterF 1s steps(12) infinite;
+  animation: letterF 1s steps(12) infinite;
+}
+
+@-webkit-keyframes letterI {
+  0% {
+    background-position: 0 0;
   }
-  
-  .frame {
-    width: 400px;
-    height: 200px;
-    margin: 2px;
-    display: block;
-    background: transparent url("https://assets.codepen.io/219932/ciao-frames.png") 0 0 no-repeat;
+
+  100% {
+    background-position: 0 -2400px;
   }
-  #one {
-    -webkit-animation: letterI 1s steps(12) infinite;
-            animation: letterI 1s steps(12) infinite;
+}
+
+@keyframes letterI {
+  0% {
+    background-position: 0 0;
   }
-  #two {
-    -webkit-animation: letterS 1s steps(12) infinite;
-            animation: letterS 1s steps(12) infinite;
+
+  100% {
+    background-position: 0 -2400px;
   }
-  #three {
-    -webkit-animation: letterF 1s steps(12) infinite;
-            animation: letterF 1s steps(12) infinite;
+}
+
+@-webkit-keyframes letterS {
+  0% {
+    background-position: -400px 0;
   }
-  #four {
-    -webkit-animation: letterF 1s steps(12) infinite;
-            animation: letterF 1s steps(12) infinite;
+
+  100% {
+    background-position: -400px -2400px;
   }
-  @-webkit-keyframes letterI {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 -2400px;
-    }
+}
+
+@keyframes letterS {
+  0% {
+    background-position: -400px 0;
   }
-  @keyframes letterI {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 -2400px;
-    }
+
+  100% {
+    background-position: -400px -2400px;
   }
-  @-webkit-keyframes letterS {
-    0% {
-      background-position: -400px 0;
-    }
-    100% {
-      background-position: -400px -2400px;
-    }
+}
+
+@-webkit-keyframes letterF {
+  0% {
+    background-position: -800px 0;
   }
-  @keyframes letterS {
-    0% {
-      background-position: -400px 0;
-    }
-    100% {
-      background-position: -400px -2400px;
-    }
+
+  100% {
+    background-position: -800px -2400px;
   }
-  @-webkit-keyframes letterF {
-    0% {
-      background-position: -800px 0;
-    }
-    100% {
-      background-position: -800px -2400px;
-    }
+}
+
+@keyframes letterF {
+  0% {
+    background-position: -800px 0;
   }
-  @keyframes letterF {
-    0% {
-      background-position: -800px 0;
-    }
-    100% {
-      background-position: -800px -2400px;
-    }
+
+  100% {
+    background-position: -800px -2400px;
   }
-  @-webkit-keyframes letterO {
-    0% {
-      background-position: -1200px 0;
-    }
-    100% {
-      background-position: -1200px -2400px;
-    }
+}
+
+@-webkit-keyframes letterO {
+  0% {
+    background-position: -1200px 0;
   }
-  @keyframes letterO {
-    0% {
-      background-position: -1200px 0;
-    }
-    100% {
-      background-position: -1200px -2400px;
-    }
+
+  100% {
+    background-position: -1200px -2400px;
   }
-  
-  
-  .citation {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    background: var(--citation-bg-color);
-    p {
-      margin: 0;
-      padding: 10px;
-      font-size: 12px;
-      color: var(--citation-p-color);
-      a {
-        color: var(--citation-a-color);
-        cursor: pointer;
-        &:hover {
-          color: var(--citation-a-hover-color);
-        }
+}
+
+@keyframes letterO {
+  0% {
+    background-position: -1200px 0;
+  }
+
+  100% {
+    background-position: -1200px -2400px;
+  }
+}
+
+
+.citation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--citation-bg-color);
+
+  p {
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--citation-p-color);
+
+    a {
+      color: var(--citation-a-color);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--citation-a-hover-color);
       }
     }
   }
+}
 
 
-
-
-
-
-
-
-
-
-
-  
+.et-hero-tabs  {
+  background-color: black;
+  color: white;
+}
