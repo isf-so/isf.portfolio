@@ -7,7 +7,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.et-hero-tabs .premier{
+  margin-bottom: 24px;
+}
 * {
   font-family: Avenir, sans-serif;
 }
@@ -469,19 +471,6 @@ button:hover {
   background-color: black;
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
