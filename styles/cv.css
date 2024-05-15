@@ -196,7 +196,6 @@ body {
             perspective-origin: 34% 61%;
             
 }
-
 img {
     width: 160px;
 }
@@ -301,12 +300,10 @@ button::before {
   }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
   .container {
-    width: 100vw;
-    margin-left: 0;
-    -webkit-transform: rotateX(10deg) rotateZ(-3deg) rotateY(5deg) scale3d(1, 1, -0.9);
-            transform: rotateX(10deg) rotateZ(-3deg) rotateY(5deg) scale3d(1, 1, -0.9);
+    display: none;
   }
 }
 .box {
@@ -510,3 +507,17 @@ position: absolute;
   width:100px;
 }
   
+.max {
+  color: #000000;
+}
+
+@media (min-width: 769px) {
+  .max {
+    color: #ff660000;
+  }
+}
+@media (min-width: 769px) {
+  .max a {
+    color: #ff660000;
+  }
+}
