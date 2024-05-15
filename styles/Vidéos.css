@@ -278,4 +278,19 @@ footer {
 
 
 
+/* Pour les PC */
+@media screen and (min-width: 768px) {
+    video {
+        width: 810px;
+    }
+}
 
+/* Pour les téléphones */
+@media screen and (max-width: 767px) {
+    video {
+        width: 100%; /* Ceci rendra la vidéo prendre la largeur complète de l'écran */
+    }
+}
+.espace{
+    margin: 24px;
+}
