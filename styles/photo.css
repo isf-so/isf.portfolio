@@ -144,33 +144,34 @@ footer {
     display: grid;
     gap: 14px;
     justify-content: center;
-    height: 60%;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Changement de la taille de base des colonnes */
   }
-
+  
   @media (max-width: 1200px) {
     .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustement pour les écrans moyens */
     }
   }
-
+  
   @media (max-width: 768px) {
     .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajustement pour les tablettes */
     }
   }
-
+  
   @media (max-width: 480px) {
     .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Utilisation de la largeur totale pour les petits écrans */
     }
   }
-
-
-img{
-    width: 50%;
-    height: auto;
+  
+  img {
+    width: 100%; /* Les images occupent 100% de la largeur de leur conteneur */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    max-width: 100%; /* Empêche les images de déborder de leur conteneur */
+    max-height: 100%; /* Empêche les images de déborder de leur conteneur */
   }
+  
 
 
 .item-1,
