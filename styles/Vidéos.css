@@ -19,7 +19,7 @@ html {
 
 a {
     text-decoration: none;
-    color: grey;
+    color: rgb(207, 207, 207);
 }
 
 
@@ -56,16 +56,19 @@ a {
     border-radius: 10px;
     border: 3px solid #ffffff;
   }
+
+
+
+
 .et-hero-tabs,
 .et-slide {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: column; 
+    color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative;
-    background: #eee;
     text-align: center;
     padding: 0 2em;
 
@@ -105,7 +108,7 @@ a {
 
     &:hover {
         color: white;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgb(0, 0, 0);
         transition: all 0.5s ease;
     }
 }
@@ -251,12 +254,179 @@ button:hover {
     color: #FFF;
 }
 
+:root {
+    --bg-color: #fff;
+    --p-color: #fff;
+    --a-color: #fff;
+    --a-hover-color: #fff;
+    --citation-bg-color: #fff;
+    --citation-p-color: #fff;
+    --citation-a-color: #fff;
+    --citation-a-hover-color: #fff;
+  }
+  
+  
+
+.wrapper1 {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 700px;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 200px;
+  }
+  
+  /* Media query pour cacher les éléments lorsque la largeur est inférieure à 500px */
+  @media (max-width: 500px) {
+  
+    .wrapper1,
+    .wrapper {
+      display: none;
+    }
+  }
 
 
+  #tab-flexbox{
+    background: #000000;
 
+    color: white;
 
+  }
 
-
+  .ciao-frames {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    justify-content: space-evenly;
+    width: 80%;
+  
+    max-width: 800px;
+    height: 400px;
+  }
+  
+  .frame {
+    width: 400px;
+    height: 200px;
+    margin: 2px;
+    display: block;
+    background: transparent url("../photo/ciao-frames.png") 0 0 no-repeat;
+  }
+  
+  #one {
+    -webkit-animation: letterI 1s steps(12) infinite;
+    animation: letterI 1s steps(12) infinite;
+  
+  }
+  
+  #two {
+    -webkit-animation: letterS 1s steps(12) infinite;
+    animation: letterS 1s steps(12) infinite;
+  }
+  
+  #three {
+    -webkit-animation: letterF 1s steps(12) infinite;
+    animation: letterF 1s steps(12) infinite;
+  }
+  
+  #four {
+    -webkit-animation: letterF 1s steps(12) infinite;
+    animation: letterF 1s steps(12) infinite;
+  }
+  
+  @-webkit-keyframes letterI {
+    0% {
+      background-position: 0 0;
+    }
+  
+    100% {
+      background-position: 0 -2400px;
+    }
+  }
+  
+  @keyframes letterI {
+    0% {
+      background-position: 0 0;
+    }
+  
+    100% {
+      background-position: 0 -2400px;
+    }
+  }
+  
+  @-webkit-keyframes letterS {
+    0% {
+      background-position: -400px 0;
+    }
+  
+    100% {
+      background-position: -400px -2400px;
+    }
+  }
+  
+  @keyframes letterS {
+    0% {
+      background-position: -400px 0;
+    }
+  
+    100% {
+      background-position: -400px -2400px;
+    }
+  }
+  
+  @-webkit-keyframes letterF {
+    0% {
+      background-position: -800px 0;
+    }
+  
+    100% {
+      background-position: -800px -2400px;
+    }
+  }
+  
+  @keyframes letterF {
+    0% {
+      background-position: -800px 0;
+    }
+  
+    100% {
+      background-position: -800px -2400px;
+    }
+  }
+  
+  @-webkit-keyframes letterO {
+    0% {
+      background-position: -1200px 0;
+    }
+  
+    100% {
+      background-position: -1200px -2400px;
+    }
+  }
+  
+  @keyframes letterO {
+    0% {
+      background-position: -1200px 0;
+    }
+  
+    100% {
+      background-position: -1200px -2400px;
+    }
+  }
 
 
 video{
