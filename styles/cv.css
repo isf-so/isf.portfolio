@@ -266,24 +266,49 @@ button::before {
 }
 
 .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 80vw;
-    height: 100vh;
-    margin-left: 6vw;
-    /* transform:rotateX(7deg) rotateZ(-4deg) rotateY(13deg) scale3d(1, 1, -0.9); */
-    -webkit-transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
-            transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80vw;
+  height: 100vh;
+  margin-left: 6vw;
+  -webkit-transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
+          transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 90vw;
+    margin-left: 5vw;
+    -webkit-transform: rotateX(20deg) rotateZ(-7deg) rotateY(12deg) scale3d(1, 1, -0.9);
+            transform: rotateX(20deg) rotateZ(-7deg) rotateY(12deg) scale3d(1, 1, -0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95vw;
+    margin-left: 2.5vw;
+    -webkit-transform: rotateX(15deg) rotateZ(-5deg) rotateY(10deg) scale3d(1, 1, -0.9);
+            transform: rotateX(15deg) rotateZ(-5deg) rotateY(10deg) scale3d(1, 1, -0.9);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+    margin-left: 0;
+    -webkit-transform: rotateX(10deg) rotateZ(-3deg) rotateY(5deg) scale3d(1, 1, -0.9);
+            transform: rotateX(10deg) rotateZ(-3deg) rotateY(5deg) scale3d(1, 1, -0.9);
+  }
+}
 .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,6 +399,8 @@ button::before {
 .cover img {
     -webkit-transition: all 260ms ease-in-out;
     transition: all 260ms ease-in-out;
+    border-radius: 20px;
+    box-shadow: #00000058 10px 10px 10px;
 }
 
 .box .cover::after {
