@@ -10,6 +10,9 @@ html {
 .et-hero-tabs .premier{
   margin-bottom: 24px;
 }
+.et-main{
+  margin-top: 14px;
+}
 * {
   font-family: Avenir, sans-serif;
 }
