@@ -1,139 +1,141 @@
-
-
-
 body {
-    margin: 0;
-    overflow-x: hidden;
-    background: #eee;
-    
+  margin: 0;
+  overflow-x: hidden;
+  background: #eee;
+
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    font-family: Avenir, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 
 
 a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 
 footer {
-    position:fixed;
-    bottom: 5px;
-    left: 14px;
-    display: flex;
-    z-index: 9999;
+  position: fixed;
+  bottom: 5px;
+  left: 14px;
+  display: flex;
 }
 
 
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: none;
-    scrollbar-color: #8f54a0 #ffffff;
-  }
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #8f54a0 #ffffff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #8f54a0;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
 .et-hero-tabs,
 .et-slide {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    background: #eee;
-    text-align: center;
-    padding: 0 2em;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
 
-    h1 {
-        font-size: 2rem;
-        margin: 0;
-        letter-spacing: 0.6rem;
-    }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.6rem;
+  }
 
-    h3 {
-        font-size: 1rem;
+  h3 {
+    font-size: 1rem;
 
-        opacity: 0.6;
-    }
+    opacity: 0.6;
+  }
 }
+
 .et-hero-tabs-container {
-    display: flex;
-    flex-direction: row;
-    position: fixed; /* Remplacez sticky par fixed */
-    top: 0; /* Fixez l'élément en haut */
-    left: 0; /* Fixez l'élément à gauche (peut être ajusté selon vos besoins) */
-    width: 100%;
-    height: 70px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    z-index: 10;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  /* Remplacez sticky par fixed */
+  top: 0;
+  /* Fixez l'élément en haut */
+  left: 0;
+  /* Fixez l'élément à gauche (peut être ajusté selon vos besoins) */
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
 }
-.et-hero-tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color: #000;
-    letter-spacing: 0.1rem;
-    transition: all 0.5s ease;
-    font-size: 0.8rem;
 
-    &:hover {
-        color: white;
-        background: rgb(0, 0, 0);
-        transition: all 0.5s ease;
-    }
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+
+  &:hover {
+    color: white;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+  }
 }
 
 .et-hero-tab-slider {
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 6px;
-    background: #000000;
-    transition: left 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #000000;
+  transition: left 0.3s ease;
 }
 
 @media (min-width: 800px) {
 
-    .et-hero-tabs,
-    .et-slide {
-        h1 {
-            font-size: 3rem;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
+  .et-hero-tabs,
+  .et-slide {
+    h1 {
+      font-size: 3rem;
     }
 
-    .et-hero-tab {
-        font-size: 1rem;
+    h3 {
+      font-size: 1rem;
     }
+  }
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
 }
 
 
@@ -141,316 +143,324 @@ footer {
 
 
 .gallery {
-    display: grid;
-    gap: 14px;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Changement de la taille de base des colonnes */
+  display: grid;
+  gap: 14px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Changement de la taille de base des colonnes */
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Ajustement pour les écrans moyens */
   }
-  
-  @media (max-width: 1200px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustement pour les écrans moyens */
-    }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Ajustement pour les tablettes */
   }
-  
-  @media (max-width: 768px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajustement pour les tablettes */
-    }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    /* Utilisation de la largeur totale pour les petits écrans */
   }
-  
-  @media (max-width: 480px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Utilisation de la largeur totale pour les petits écrans */
-    }
-  }
-  
-  img {
-    width: 100%; /* Les images occupent 100% de la largeur de leur conteneur */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
-    max-width: 100%; /* Empêche les images de déborder de leur conteneur */
-    max-height: 100%; /* Empêche les images de déborder de leur conteneur */
-  }
-  
+}
+
+img {
+  width: 100%;
+  /* Les images occupent 100% de la largeur de leur conteneur */
+  height: auto;
+  /* Hauteur automatique pour conserver les proportions */
+  max-width: 100%;
+  /* Empêche les images de déborder de leur conteneur */
+  max-height: 100%;
+  /* Empêche les images de déborder de leur conteneur */
+}
+
 
 
 .item-1,
 .item-2,
 .item-3 {
-    position: absolute;
-    display: block;
-    right: 0;
-    animation-duration: 20s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  position: absolute;
+  display: block;
+  right: 0;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .item-1 {
-    animation-name: anim-1;
+  animation-name: anim-1;
 }
 
 .item-2 {
-    animation-name: anim-2;
+  animation-name: anim-2;
 }
 
 .item-3 {
-    animation-name: anim-3;
+  animation-name: anim-3;
 }
 
 @keyframes anim-1 {
 
-    0%,
-    8.3% {
-        left: -100%;
-        opacity: 0;
-    }
+  0%,
+  8.3% {
+    left: -100%;
+    opacity: 0;
+  }
 
-    8.3%,
-    25% {
-        left: 25%;
-        opacity: 1;
-    }
+  8.3%,
+  25% {
+    left: 25%;
+    opacity: 1;
+  }
 
-    33.33%,
-    100% {
-        left: 110%;
-        opacity: 0;
-    }
+  33.33%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 @keyframes anim-2 {
 
-    0%,
-    33.33% {
-        left: -100%;
-        opacity: 0;
-    }
+  0%,
+  33.33% {
+    left: -100%;
+    opacity: 0;
+  }
 
-    41.63%,
-    58.29% {
-        left: 25%;
-        opacity: 1;
-    }
+  41.63%,
+  58.29% {
+    left: 25%;
+    opacity: 1;
+  }
 
-    66.66%,
-    100% {
-        left: 110%;
-        opacity: 0;
-    }
+  66.66%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 @keyframes anim-3 {
 
-    0%,
-    66.66% {
-        left: -100%;
-        opacity: 0;
-    }
+  0%,
+  66.66% {
+    left: -100%;
+    opacity: 0;
+  }
 
-    74.96%,
-    91.62% {
-        left: 25%;
-        opacity: 1;
-    }
+  74.96%,
+  91.62% {
+    left: 25%;
+    opacity: 1;
+  }
 
-    100% {
-        left: 110%;
-        opacity: 0;
-    }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 
 button {
-    max-width:10px;
-    padding: 1px 30px;
-    color: #000000;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  max-width: 10px;
+  padding: 1px 30px;
+  color: #000000;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #000000;
-    color: #FFF;
+  background-color: #000000;
+  color: #FFF;
 }
 
 
 
 
 :root {
-    --bg-color: #fff;
-    --p-color: #fff;
-    --a-color: #fff;
-    --a-hover-color: #fff;
-    --citation-bg-color: #fff;
-    --citation-p-color: #fff;
-    --citation-a-color: #fff;
-    --citation-a-hover-color: #fff;
-  }
-  
-  
+  --bg-color: #fff;
+  --p-color: #fff;
+  --a-color: #fff;
+  --a-hover-color: #fff;
+  --citation-bg-color: #fff;
+  --citation-p-color: #fff;
+  --citation-a-color: #fff;
+  --citation-a-hover-color: #fff;
+}
+
+
 
 .wrapper1 {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 700px;
-  }
-  
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 700px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 200px;
+}
+
+/* Media query pour cacher les éléments lorsque la largeur est inférieure à 500px */
+@media (max-width: 500px) {
+
+  .wrapper1,
   .wrapper {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    right: 200px;
+    display: none;
   }
-  
-  /* Media query pour cacher les éléments lorsque la largeur est inférieure à 500px */
-  @media (max-width: 500px) {
-  
-    .wrapper1,
-    .wrapper {
-      display: none;
-    }
-  }
+}
 
 
-  #tab-flexbox{
-    background: #000000;
+#tab-flexbox {
+  background: #000000;
 
-    color: white;
+  color: white;
 
+}
+
+.ciao-frames {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  justify-content: space-evenly;
+  width: 80%;
+
+  max-width: 800px;
+  height: 400px;
+}
+
+.frame {
+  width: 400px;
+  height: 200px;
+  margin: 2px;
+  display: block;
+  background: transparent url("../photo/ciao-frames.png") 0 0 no-repeat;
+}
+
+#one {
+  -webkit-animation: letterI 1s steps(12) infinite;
+  animation: letterI 1s steps(12) infinite;
+
+}
+
+#two {
+  -webkit-animation: letterS 1s steps(12) infinite;
+  animation: letterS 1s steps(12) infinite;
+}
+
+#three {
+  -webkit-animation: letterF 1s steps(12) infinite;
+  animation: letterF 1s steps(12) infinite;
+}
+
+#four {
+  -webkit-animation: letterF 1s steps(12) infinite;
+  animation: letterF 1s steps(12) infinite;
+}
+
+@-webkit-keyframes letterI {
+  0% {
+    background-position: 0 0;
   }
 
-  .ciao-frames {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
-    justify-content: space-evenly;
-    width: 80%;
-  
-    max-width: 800px;
-    height: 400px;
+  100% {
+    background-position: 0 -2400px;
   }
-  
-  .frame {
-    width: 400px;
-    height: 200px;
-    margin: 2px;
-    display: block;
-    background: transparent url("../photo/ciao-frames.png") 0 0 no-repeat;
+}
+
+@keyframes letterI {
+  0% {
+    background-position: 0 0;
   }
-  
-  #one {
-    -webkit-animation: letterI 1s steps(12) infinite;
-    animation: letterI 1s steps(12) infinite;
-  
+
+  100% {
+    background-position: 0 -2400px;
   }
-  
-  #two {
-    -webkit-animation: letterS 1s steps(12) infinite;
-    animation: letterS 1s steps(12) infinite;
+}
+
+@-webkit-keyframes letterS {
+  0% {
+    background-position: -400px 0;
   }
-  
-  #three {
-    -webkit-animation: letterF 1s steps(12) infinite;
-    animation: letterF 1s steps(12) infinite;
+
+  100% {
+    background-position: -400px -2400px;
   }
-  
-  #four {
-    -webkit-animation: letterF 1s steps(12) infinite;
-    animation: letterF 1s steps(12) infinite;
+}
+
+@keyframes letterS {
+  0% {
+    background-position: -400px 0;
   }
-  
-  @-webkit-keyframes letterI {
-    0% {
-      background-position: 0 0;
-    }
-  
-    100% {
-      background-position: 0 -2400px;
-    }
+
+  100% {
+    background-position: -400px -2400px;
   }
-  
-  @keyframes letterI {
-    0% {
-      background-position: 0 0;
-    }
-  
-    100% {
-      background-position: 0 -2400px;
-    }
+}
+
+@-webkit-keyframes letterF {
+  0% {
+    background-position: -800px 0;
   }
-  
-  @-webkit-keyframes letterS {
-    0% {
-      background-position: -400px 0;
-    }
-  
-    100% {
-      background-position: -400px -2400px;
-    }
+
+  100% {
+    background-position: -800px -2400px;
   }
-  
-  @keyframes letterS {
-    0% {
-      background-position: -400px 0;
-    }
-  
-    100% {
-      background-position: -400px -2400px;
-    }
+}
+
+@keyframes letterF {
+  0% {
+    background-position: -800px 0;
   }
-  
-  @-webkit-keyframes letterF {
-    0% {
-      background-position: -800px 0;
-    }
-  
-    100% {
-      background-position: -800px -2400px;
-    }
+
+  100% {
+    background-position: -800px -2400px;
   }
-  
-  @keyframes letterF {
-    0% {
-      background-position: -800px 0;
-    }
-  
-    100% {
-      background-position: -800px -2400px;
-    }
+}
+
+@-webkit-keyframes letterO {
+  0% {
+    background-position: -1200px 0;
   }
-  
-  @-webkit-keyframes letterO {
-    0% {
-      background-position: -1200px 0;
-    }
-  
-    100% {
-      background-position: -1200px -2400px;
-    }
+
+  100% {
+    background-position: -1200px -2400px;
   }
-  
-  @keyframes letterO {
-    0% {
-      background-position: -1200px 0;
-    }
-  
-    100% {
-      background-position: -1200px -2400px;
-    }
+}
+
+@keyframes letterO {
+  0% {
+    background-position: -1200px 0;
   }
+
+  100% {
+    background-position: -1200px -2400px;
+  }
+}
 
 
 
@@ -568,12 +578,10 @@ https://github.com/robole/title-sequences
 
   animation: bar-scale 0.25s linear 3s 1 forwards;
 
-  background: linear-gradient(
-    to right,
-    white var(--bar-width),
-    transparent var(--bar-width) calc(100% - var(--bar-width)),
-    white calc(100% - var(--bar-width))
-  );
+  background: linear-gradient(to right,
+      white var(--bar-width),
+      transparent var(--bar-width) calc(100% - var(--bar-width)),
+      white calc(100% - var(--bar-width)));
 
   content: "";
 
@@ -594,13 +602,10 @@ https://github.com/robole/title-sequences
 
   animation: sparkle 0.4s linear 3.5s 1 forwards;
 
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgb(252 249 241 / 94%) 0% 7%,
-      transparent 7% 100%
-    ),
-    conic-gradient(
-      transparent 0deg 18deg,
+      transparent 7% 100%),
+    conic-gradient(transparent 0deg 18deg,
       var(--sparkle-color) 18deg,
       transparent 20deg 40deg,
       var(--sparkle-color) 40deg,
@@ -614,19 +619,16 @@ https://github.com/robole/title-sequences
       var(--sparkle-color) 270deg,
       transparent 275deg 300deg,
       var(--sparkle-color) 300deg,
-      transparent 303deg 360deg
-    );
+      transparent 303deg 360deg);
 
   border-radius: 50%;
-  clip-path: polygon(
-    50% 0,
-    59.13% 26.64%,
-    85.13% -2.35%,
-    100% 50%,
-    50% 100%,
-    0 50%,
-    31.39% 34.86%
-  );
+  clip-path: polygon(50% 0,
+      59.13% 26.64%,
+      85.13% -2.35%,
+      100% 50%,
+      50% 100%,
+      0 50%,
+      31.39% 34.86%);
 
   content: "";
 
@@ -644,4 +646,233 @@ https://github.com/robole/title-sequences
   .superscript::after {
     --size: 6rem;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --card-height: 40vw;
+  --card-margin: 4vw;
+  --card-top-offset: 1em;
+  --numcards: 4;
+  --outline-width: 0px;
+}
+
+#cards {
+  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+  /* Make place at bottom, as items will slide to that position*/
+  margin-bottom: var(--card-margin);
+  /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+#card_1 {
+  --index: 1;
+}
+
+#card_2 {
+  --index: 2;
+}
+
+#card_3 {
+  --index: 3;
+}
+
+#card_4 {
+  --index: 4;
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+
+
+
+  .card {
+    --index0: calc(var(--index) - 1);
+    /* 0-based index */
+    --reverse-index: calc(var(--numcards) - var(--index0));
+    /* reverse index */
+    --reverse-index0: calc(var(--reverse-index) - 1);
+    /* 0-based reverse index */
+  }
+
+  .card__content {
+    transform-origin: 50% 0%;
+    will-change: transform;
+
+    --duration: calc(var(--reverse-index0) * 1s);
+    --delay: calc(var(--index0) * 1s);
+
+    animation: var(--duration) linear scale var(--delay) forwards;
+    animation-timeline: cards-element-scrolls-in-body;
+  }
+
+  @keyframes scale {
+    to {
+      transform:
+        scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+    }
+  }
+}
+
+/** DEBUG **/
+main{
+  z-index: 12;
+}
+#debug {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+
+#debug::after {
+  content: " Show Debug";
+  margin-left: 1.5em;
+  color: white;
+  white-space: nowrap;
+}
+
+#debug:checked~main {
+  --outline-width: 1px;
+}
+
+
+/** PAGE STYLING **/
+
+* {
+  /* Poor Man's Reset */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  font-size: calc(1em + 0.5vw);
+}
+
+header,
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#cards {
+  list-style: none;
+  outline: calc(var(--outline-width) * 10) solid blue;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--numcards), var(--card-height));
+  gap: var(--card-margin);
+}
+
+.card {
+  outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  color: rgb(10, 5, 7);
+  border-radius: 1em;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  align-items: stretch;
+  outline: var(--outline-width) solid lime;
+}
+
+.card__content>div {
+  grid-area: text;
+  width: 80%;
+  place-self: center;
+  text-align: left;
+
+  display: grid;
+  gap: 1em;
+  place-items: start;
+}
+
+.card__content>figure {
+  grid-area: img;
+  overflow: hidden;
+}
+
+.card__content>figure>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.42;
+}
+
+.btn {
+  background: rgb(0, 0, 0);
+  color: rgb(255 255 255);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  transition: 1s;
+  border: solid 1px black;
+
+
+}
+
+aside {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+aside p {
+  margin-bottom: 1em;
+}
+
+.btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid 1px black;
+  transition: 0.4s;
 }
