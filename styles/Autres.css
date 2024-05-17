@@ -20,10 +20,14 @@ header {
 }
 
 
-* {
-    font-family: Avenir, sans-serif;
-}
-
+*{
+    font-family: FUTURA65MEDIUM;
+  }
+  @font-face {
+    font-family: 'FUTURA65MEDIUM';
+    src: url('../futura/FUTURA65MEDIUM.TTF');
+  }
+  
 nav {
     width: 100%;
     margin: 0 auto;

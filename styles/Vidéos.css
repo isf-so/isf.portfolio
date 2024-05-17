@@ -655,3 +655,11 @@ https://github.com/robole/title-sequences
     --size: 6rem;
   }
 }
+*{
+  font-family: FUTURA65MEDIUM;
+}
+@font-face {
+  font-family: 'FUTURA65MEDIUM';
+  src: url('../futura/FUTURA65MEDIUM.TTF');
+}
+

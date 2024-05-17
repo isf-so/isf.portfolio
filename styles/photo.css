@@ -4,6 +4,14 @@ body {
   background: #eee;
 
 }
+*{
+  font-family: FUTURA65MEDIUM;
+}
+@font-face {
+  font-family: 'FUTURA65MEDIUM';
+  src: url('../futura/FUTURA65MEDIUM.TTF');
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -9,11 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
-    font-family: Avenir, sans-serif;
-}
-
-
 
 a {
     text-decoration: none;
@@ -471,4 +466,11 @@ svg {
     100% { width: 14px; opacity: 1;}
   }
   
+  *{
+    font-family: FUTURA65MEDIUM;
+  }
+  @font-face {
+    font-family: 'FUTURA65MEDIUM';
+    src: url('../futura/FUTURA65MEDIUM.TTF');
+  }
   
