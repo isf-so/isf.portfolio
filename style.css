@@ -537,7 +537,7 @@ https://github.com/robole/title-sequences
   color: white;
   font-family: "Playfair Display", Vidaloka, serif;
   font-size: 8rem;
-
+  display: flex;
   line-height: 0.85;
   perspective: 500px;
 }
