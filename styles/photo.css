@@ -4,28 +4,19 @@ body {
   background: #eee;
 
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-
-
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
-
 footer {
   position: fixed;
   bottom: 5px;
   left: 14px;
   display: flex;
 }
-
-
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
