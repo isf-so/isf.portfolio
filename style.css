@@ -26,6 +26,7 @@ footer {
   align-items: center;
 
 }
+
 /* Styles par défaut */
 .retrecit {
   margin-left: 20vh;
@@ -64,7 +65,57 @@ footer {
   border: 3px solid #ffffff;
 }
 
-.et-hero-tabs,
+.et-hero-tabs {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #eee;
+  text-align: center;
+  padding: 0 2em;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+
+    opacity: 0.6;
+  }
+
+}
+
+.et-slide1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #000000;
+  text-align: center;
+  padding: 0 2em;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+    letter-spacing: 0.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    color: white;
+    opacity: 0.6;
+  }
+}
+
 .et-slide {
   display: flex;
   flex-direction: column;
@@ -466,7 +517,7 @@ button:hover {
 }
 
 
-.et-hero-tabs  {
+.et-hero-tabs {
   background-color: black;
   color: white;
 }
@@ -584,12 +635,10 @@ https://github.com/robole/title-sequences
 
   animation: bar-scale 0.25s linear 3s 1 forwards;
 
-  background: linear-gradient(
-    to right,
-    white var(--bar-width),
-    transparent var(--bar-width) calc(100% - var(--bar-width)),
-    white calc(100% - var(--bar-width))
-  );
+  background: linear-gradient(to right,
+      white var(--bar-width),
+      transparent var(--bar-width) calc(100% - var(--bar-width)),
+      white calc(100% - var(--bar-width)));
 
   content: "";
 
@@ -610,13 +659,10 @@ https://github.com/robole/title-sequences
 
   animation: sparkle 0.4s linear 3.5s 1 forwards;
 
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgb(252 249 241 / 94%) 0% 7%,
-      transparent 7% 100%
-    ),
-    conic-gradient(
-      transparent 0deg 18deg,
+      transparent 7% 100%),
+    conic-gradient(transparent 0deg 18deg,
       var(--sparkle-color) 18deg,
       transparent 20deg 40deg,
       var(--sparkle-color) 40deg,
@@ -630,19 +676,16 @@ https://github.com/robole/title-sequences
       var(--sparkle-color) 270deg,
       transparent 275deg 300deg,
       var(--sparkle-color) 300deg,
-      transparent 303deg 360deg
-    );
+      transparent 303deg 360deg);
 
   border-radius: 50%;
-  clip-path: polygon(
-    50% 0,
-    59.13% 26.64%,
-    85.13% -2.35%,
-    100% 50%,
-    50% 100%,
-    0 50%,
-    31.39% 34.86%
-  );
+  clip-path: polygon(50% 0,
+      59.13% 26.64%,
+      85.13% -2.35%,
+      100% 50%,
+      50% 100%,
+      0 50%,
+      31.39% 34.86%);
 
   content: "";
 
@@ -660,4 +703,39 @@ https://github.com/robole/title-sequences
   .superscript::after {
     --size: 6rem;
   }
+}
+.typewriter1 h1 {
+  color: #000000;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid gold; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid gold; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gold }
 }
