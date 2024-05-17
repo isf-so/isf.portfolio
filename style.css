@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  font-family: Avenir, sans-serif;
-}
-
 a {
   text-decoration: none;
   color: rgb(202, 202, 202);
@@ -523,21 +519,6 @@ button:hover {
 }
 
 
-
-/*
-
-Tutorial:
-https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html
-
-Part of Title Sequences collection:
-https://codepen.io/collection/nNmwgP
-
-Source code:
-https://github.com/robole/title-sequences
-
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
 
 :root {
   --bar-scale-y: 0;
