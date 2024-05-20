@@ -1,3 +1,27 @@
+// Fonction pour compresser les images
+function compresserImages() {
+    // Sélectionnez tous les éléments <img> sur votre page
+    const images = document.querySelectorAll('img');
+
+    // Parcourez chaque image et comprimez-la
+    images.forEach(image => {
+        // Créez une nouvelle instance de ImageCompressor
+        const compressor = new ImageCompressor();
+
+        // Utilisez la méthode compress() pour compresser l'image
+        compressor.compress(image, {
+            quality: 0.6, // qualité de compression entre 0 et 1
+            success(result) {
+                // Lorsque la compression réussit, remplacez l'image d'origine par l'image compressée
+                image.src = result;
+            },
+            error(e) {
+                // En cas d'erreur lors de la compression, affichez un message d'erreur dans la console
+                console.error('Erreur lors de la compression de l\'image:', e);
+            }
+        });
+    });
+}
 
 
 
@@ -42,27 +66,3 @@ function retraduirePage() {
 
 
 
-
-
-
-// Sélectionnez tous les éléments <img> sur votre page
-const images = document.querySelectorAll('img');
-
-// Parcourez chaque image et comprimez-la
-images.forEach(image => {
-    // Créez une nouvelle instance de ImageCompressor
-    const compressor = new ImageCompressor();
-
-    // Utilisez la méthode compress() pour compresser l'image
-    compressor.compress(image, {
-        quality: 0.6, // qualité de compression entre 0 et 1
-        success(result) {
-            // Lorsque la compression réussit, remplacez l'image d'origine par l'image compressée
-            image.src = result;
-        },
-        error(e) {
-            // En cas d'erreur lors de la compression, affichez un message d'erreur dans la console
-            console.error('Erreur lors de la compression de l\'image:', e);
-        }
-    });
-});
