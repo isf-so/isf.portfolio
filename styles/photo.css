@@ -193,11 +193,11 @@ figcaption {
 	transition: opacity 600ms, transform 600ms;
 }
 
-a:is(:hover, :focus) figure::after {
+figure:is(:hover, :focus) figure::after {
 	opacity: 1;
 }
 
-a:is(:hover, :focus) figcaption {
+figure:is(:hover, :focus) figcaption {
 	opacity: 1;
 	transition: opacity 600ms;
 }
@@ -214,17 +214,17 @@ a:is(:hover, :focus) figcaption {
 		transition: transform 900ms;
 	}
 	
-	a:is(:hover, :focus) figure::after {
+	figure:is(:hover, :focus) figure::after {
 		transform: scale(2.5);
 	}
 
-	a:is(:hover, :focus) figcaption {
+	figure:is(:hover, :focus) figcaption {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 		transition: opacity 600ms 400ms, transform 600ms 400ms;
 	}
 
-	a:is(:hover, :focus) img {
+	figure:is(:hover, :focus) img {
 		transform: scale(1.2);
 	}
 }
