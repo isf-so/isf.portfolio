@@ -30,7 +30,6 @@ a {
     left: 48%;
     gap: 30px;
     z-index: 9999;
-
     align-items: center;
 }
 
@@ -86,6 +85,8 @@ a {
 }
 .et-hero-tabs-container {
     display: flex;
+    overflow-x: hidden;
+
     flex-direction: row;
     position: fixed; /* Remplacez sticky par fixed */
     top: 0; /* Fixez l'élément en haut */
