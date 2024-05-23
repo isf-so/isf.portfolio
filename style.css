@@ -11,7 +11,28 @@ body {
   src: url('futura/FUTURA65MEDIUM.TTF');
 }
 
+.photoflou{
+  gap: 14px;
+  display: flex;
+}
+img{
+  filter: blur(5px); /* Ajustez le nombre de pixels pour régler l'intensité du flou */
+  width: 204px;
+  height: auto;
+}
+/* Masquer la div lorsque la largeur de l'écran est inférieure à 768px */
+@media (max-width: 768px) {
+  .photoflou {
+      display: none;
+  }
+}
 
+/* Afficher la div lorsque la largeur de l'écran est supérieure à 768px */
+@media (min-width: 769px) {
+  .photoflou {
+      display: flex;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -20,7 +41,6 @@ a {
   text-decoration: none;
   color: rgb(202, 202, 202);
 }
-
 
 footer {
   position: fixed;
