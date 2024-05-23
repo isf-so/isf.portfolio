@@ -401,7 +401,7 @@ button:hover {
 }
 
 /* Media query pour cacher les éléments lorsque la largeur est inférieure à 500px */
-@media (max-width: 500px) {
+@media (max-width: 850px) {
 
   .wrapper1,
   .wrapper {
