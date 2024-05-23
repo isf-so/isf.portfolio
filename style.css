@@ -18,7 +18,7 @@ body {
 img{
   filter: blur(5px); /* Ajustez le nombre de pixels pour régler l'intensité du flou */
   width: 204px;
-  height: auto;
+  height: 320px;
 }
 /* Masquer la div lorsque la largeur de l'écran est inférieure à 768px */
 @media (max-width: 768px) {
