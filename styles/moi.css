@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  background: #eee;
+  background: #000000;
 
 }
 
@@ -24,8 +24,8 @@ a {
 }
 
 footer {
-  position: fixed;
   bottom: 5px;
+  background-color: #000;
   left: 14px;
 }
 
@@ -40,10 +40,9 @@ footer {
 }
 .footer {
   transition: 1s;
-
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 2%;
   margin: 10px;
 }
 
