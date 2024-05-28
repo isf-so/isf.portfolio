@@ -10,13 +10,20 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
+#message {
+    margin-top: 10px;
+    color: rgb(0, 157, 0);
+    z-index: 999;
+    display: none;
+  }
 
 a {
     text-decoration: none;
     color: grey;
 }
-
+span{
+    gap: 13px;
+}
 
 footer {
     position:fixed;
