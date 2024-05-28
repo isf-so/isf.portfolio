@@ -524,6 +524,9 @@ button:hover {
   border: 2px rgb(255, 255, 255) solid;
 
 }
+.none{
+  display: none
+}
 
 /*
 
