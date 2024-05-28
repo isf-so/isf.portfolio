@@ -53,7 +53,8 @@ function retraduirePage() {
     bouton.setAttribute('onclick', 'traduirePage()');
 }
 
-
+document.querySelector('button').addEventListener("click", )
+    
 
 
 

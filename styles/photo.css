@@ -512,7 +512,18 @@ button:hover {
 
 
 
+.frs{
+  background-color: #ffffff;
+  border: 2px black solid;
+  max-width: fit-content;
+  font-size: 1em;
+}
+.frs:hover{
+  background-color: #000000;
+  color: #FFF;
+  border: 2px rgb(255, 255, 255) solid;
 
+}
 
 /*
 
