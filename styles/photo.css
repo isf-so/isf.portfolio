@@ -965,3 +965,29 @@ aside p {
   from, to { border-color: transparent }
   50% { border-color: gold }
 }
+
+
+
+
+#h4 {
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+  animation: pulse 1s infinite;
+}
+
+#h4:hover {
+  color: gold;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
