@@ -629,77 +629,8 @@ https://github.com/robole/title-sequences
   vertical-align: text-top;
 }
 
-/* bars */
-.superscript::before {
-  --bar-width: 25%;
 
-  position: absolute;
 
-  top: 37%;
-  left: 47%;
-  width: 14%;
-  height: 48%;
-
-  animation: bar-scale 0.25s linear 3s 1 forwards;
-
-  background: linear-gradient(to right,
-      white var(--bar-width),
-      transparent var(--bar-width) calc(100% - var(--bar-width)),
-      white calc(100% - var(--bar-width)));
-
-  content: "";
-
-  transform: scaleY(var(--bar-scale-y));
-}
-
-/* sparkle */
-.superscript::after {
-  --size: 10rem;
-
-  position: absolute;
-
-  top: -5%;
-  left: -85%;
-
-  width: var(--size);
-  height: var(--size);
-
-  animation: sparkle 0.4s linear 3.5s 1 forwards;
-
-  background: radial-gradient(circle at center,
-      rgb(252 249 241 / 94%) 0% 7%,
-      transparent 7% 100%),
-    conic-gradient(transparent 0deg 18deg,
-      var(--sparkle-color) 18deg,
-      transparent 20deg 40deg,
-      var(--sparkle-color) 40deg,
-      transparent 43deg 87deg,
-      var(--sparkle-color) 87deg,
-      transparent 95deg 175deg,
-      var(--sparkle-color) 175deg,
-      transparent 178deg 220deg,
-      var(--sparkle-color) 220deg,
-      transparent 222deg 270deg,
-      var(--sparkle-color) 270deg,
-      transparent 275deg 300deg,
-      var(--sparkle-color) 300deg,
-      transparent 303deg 360deg);
-
-  border-radius: 50%;
-  clip-path: polygon(50% 0,
-      59.13% 26.64%,
-      85.13% -2.35%,
-      100% 50%,
-      50% 100%,
-      0 50%,
-      31.39% 34.86%);
-
-  content: "";
-
-  filter: blur(1px);
-
-  transform: scale(0);
-}
 
 @media screen and (max-width: 600px) {
   h1 {
@@ -721,44 +652,6 @@ https://github.com/robole/title-sequences
 
 
 
-
-
-:root {
-  --card-height: 40vw;
-  --card-margin: 4vw;
-  --card-top-offset: 1em;
-  --numcards: 4;
-  --outline-width: 0px;
-}
-
-#cards {
-  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
-  /* Make place at bottom, as items will slide to that position*/
-  margin-bottom: var(--card-margin);
-  /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
-}
-
-#card_1 {
-  --index: 1;
-}
-
-#card_2 {
-  --index: 2;
-}
-
-#card_3 {
-  --index: 3;
-}
-
-#card_4 {
-  --index: 4;
-}
-
-.card {
-  position: sticky;
-  top: 0;
-  padding-top: calc(var(--index) * var(--card-top-offset));
-}
 
 @supports (animation-timeline: works) {
 
@@ -971,6 +864,7 @@ aside p {
 
 #h4 {
   cursor: pointer;
+  margin-bottom: 14px;
   font-size: 24px;
   transition: color 0.3s ease-in-out;
   animation: pulse 1s infinite;
@@ -980,14 +874,3 @@ aside p {
   color: gold;
 }
 
-@keyframes pulse {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.1);
-  }
-  100% {
-      transform: scale(1);
-  }
-}
