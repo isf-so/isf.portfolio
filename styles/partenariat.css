@@ -118,6 +118,7 @@ img {
 button {
     padding: 10px 20px;
     background-color: #000000;
+    margin-bottom:12px;
     color: white;
     border: none;
     border-radius: 5px;
