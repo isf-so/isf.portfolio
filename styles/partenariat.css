@@ -73,15 +73,43 @@ header{
     border-radius: 5px;
     text-align: center;
 }
-.imgcolon{
+.imgcolon {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* Ajoute un espace entre les images */
 }
-img{
-    width: 300px;
+
+img {
+    width: 100%;
     height: auto;
     border: #000000 solid 4px;
 }
+
+/* Media queries pour différentes tailles d'écran */
+@media (max-width: 1200px) {
+    .imgcolon {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .imgcolon {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .imgcolon {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .imgcolon {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 button {
     padding: 10px 20px;
