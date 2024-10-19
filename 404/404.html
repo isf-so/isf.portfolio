@@ -2,32 +2,30 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404</title>
-  <link rel="stylesheet" href="404.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-2025</title>
+    <link rel="stylesheet" href="404.css">
 </head>
 
 <body>
-  <div class="lock"></div>
-  <div class="message">
-    <h1>L'accès à cette page est restreint</h1>
-    <p>Redirection vers la page d'accueil dans <span id="countdown">10</span>.</p>
-    <script>
-      let countdown = 10;
-      const countdownElement = document.getElementById('countdown');
-
-      const interval = setInterval(() => {
-        countdown--;
-        countdownElement.textContent = countdown;
-
-        if (countdown === 0) {
-          clearInterval(interval);
-          window.location.href = '../index.html'; // Remplacez par votre URL
-        }
-      }, 1000);
-    </script>
-  </div>
+    <div class="keyboard">
+        <span class="key">E</span>
+        <span class="key">N</span>
+        <span class="key">C</span>
+        <span class="key">O</span>
+        <span class="key">U</span>
+        <span class="key">R</span>
+        <span class="key">S</span>
+        <span class="key">.</span>
+        <span class="key">.</span>
+    </div>
+    <!-- extra stuff -->
+    <div class="jux-linx">
+        <a href="../index.html">Accueil</a>
+        <a href="../pages/photo/">Photo</a>
+        <a href="../pages/video/">Vidéo</a>
+    </div>
 </body>
 
 </html>
