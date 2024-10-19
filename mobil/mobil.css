@@ -1,119 +1,212 @@
 body {
     background-color: rgb(0, 0, 0);
     color: white;
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Red Hat Text', sans-serif;
 }
+
 ::selection {
     color: #fff;
     background: #000000;
-    }
-.deskop{
+}
+
+.deskop {
     display: none;
 }
-.mobil{
+
+.mobil {
     display: block;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
-    border-radius: 10px;
-}
 
-::-webkit-scrollbar-track:hover {
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0);
-    border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #000000;
-    cursor: grab;
-}
-
-* {
-    cursor: none;
+:root {
+    --color: #000000;
 }
 
 
-.cursor {
-    width: 24px;
-    height: 24px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation: cursorAnim .5s infinite alternate;
-    pointer-events: none;
+.container {
+    text-align: center;
+    color: var(--color);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/fontcamera.jpg);
+    background-size: cover;
+    background-position-x: center;
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
 }
 
-.cursor::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    border: 8px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    opacity: .5;
-    top: -8px;
-    left: -8px;
-    animation: cursorAnim2 .5s infinite alternate;
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-@keyframes cursorAnim {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(.7);
-    }
+p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
 }
 
-@keyframes cursorAnim2 {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(.4);
-    }
+a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
 }
 
-@keyframes cursorAnim3 {
+.blank,
+.other {
+    width: 100%;
+    min-height: 5vh;
+    background-color: var(--color);
+}
+
+.second {
+    background-attachment: fixed;
+    height: 1200px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+
+.card>a {
+    margin-bottom: 2em;
+}
+
+.item {
+    display: flex;
+    padding: 14px;
+    max-width: 320px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5em;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+}
+
+.img {
+    width: 90%;
+    height: 200px;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: .3em;
+    ;
+}
+
+.img-second {
+    background-image: url(../img/logo\ photo.jpg);
+}
+
+.img-third {
+    background-image: url(../img/logo\ video.jpg);
+}
+
+.second {
+    flex-direction: row;
+    gap: 1.6em;
+}
+
+
+
+
+
+.containerGlitch {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    text-align: right;
+    width: 100%;
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 4rem;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.stack span:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+@keyframes stack {
     0% {
-        transform: scale(1);
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
     }
 
-    50% {
-        transform: scale(3);
+    ;
+
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
     }
 
     100% {
-        transform: scale(1);
-        opacity: 0;
+        text-shadow: none;
     }
 }
 
-.expand {
-    animation: cursorAnim3 .5s forwards;
-    border: 1px solid rgb(255, 255, 255);
+@keyframes glitch {
+    0% {
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+        transform: translate(var(--glitch-translate));
+    }
+
+    2% {
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+
+    4%,
+    100% {
+        text-shadow: none;
+        transform: none;
+    }
 }
-
-
-
-
