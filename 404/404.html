@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404</title>
+  <link rel="stylesheet" href="404.css">
+</head>
+
+<body>
+  <div class="lock"></div>
+  <div class="message">
+    <h1>L'accès à cette page est restreint</h1>
+    <p>Redirection vers la page d'accueil dans <span id="countdown">10</span>.</p>
+    <script>
+      let countdown = 10;
+      const countdownElement = document.getElementById('countdown');
+
+      const interval = setInterval(() => {
+        countdown--;
+        countdownElement.textContent = countdown;
+
+        if (countdown === 0) {
+          clearInterval(interval);
+          window.location.href = '../index.html'; // Remplacez par votre URL
+        }
+      }, 1000);
+    </script>
+  </div>
+</body>
+
+</html>
