@@ -4,8 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: 'Red Hat Text', sans-serif;
-}
-
+  }
 ::selection {
     color: #fff;
     background: #000000;
