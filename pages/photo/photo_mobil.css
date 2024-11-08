@@ -3,6 +3,7 @@
 }
 a{
   text-decoration: none;
+  color: black;
 }
 .mobil {
   display: flex;
@@ -22,7 +23,7 @@ a{
 
 .mobil h1 {
   font-size: 2rem;
-  color: #ff5733;
+  color: #000000;
   /* Couleur d'accentuation */
   margin-bottom: 0.5em;
 }
