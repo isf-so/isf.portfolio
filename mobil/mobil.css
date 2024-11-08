@@ -1,10 +1,11 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(233, 233, 233);
     color: white;
     margin: 0;
     overflow-x: hidden;
     font-family: 'Red Hat Text', sans-serif;
-  }
+}
+
 ::selection {
     color: #fff;
     background: #000000;
@@ -81,12 +82,22 @@ h3 {
 
 .card>a {
     margin-bottom: 2em;
+    font-size: 0.5rem;
+
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
 }
 
 .item {
     display: flex;
-    padding: 14px;
-    max-width: 320px;
+    padding: 8px;
+    margin: 10px;
+    max-width: 25vh;
     background-color: white;
     flex-direction: column;
     align-items: center;
@@ -120,9 +131,26 @@ h3 {
     gap: 1.6em;
 }
 
+.centre_bas {
+    display: flex;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    margin-top: 25%;
+    margin-bottom: 5%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
 
-
+.centre_bas>a {
+    display: inline-block;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+}
 
 .containerGlitch {
     color: rgb(0, 0, 0);

@@ -74,9 +74,14 @@ h3 {
     font-size: 1.6rem;
     margin-top: 1em;
 }
-
+.card {
+    width: 50vh;
+    height: max-content;
+}
 .card>a {
     margin-bottom: 2em;
+    font-size: 0.9rem;
+
 }
 
 .item {
@@ -104,10 +109,14 @@ h3 {
 }
 .img-second {
     background-image: url(../img/logo\ photo.jpg);
+    background-size: cover;
+
 }
 
 .img-third {
     background-image: url(../img/logo\ video.jpg);
+    background-size: cover;
+
 }
 
 .second {

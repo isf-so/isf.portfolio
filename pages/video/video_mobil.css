@@ -1,0 +1,29 @@
+.deskop {
+    display: none;
+}
+a{
+    text-decoration: none;
+  }
+.mobil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background-color: #f2f2f2; /* Fond léger */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centrage du texte */
+    font-family: Arial, sans-serif;
+}
+
+.mobil h1 {
+    font-size: 2rem;
+    color: #ff5733; /* Couleur d'accentuation */
+    margin-bottom: 0.5em;
+}
+
+.mobil p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 300px;
+}

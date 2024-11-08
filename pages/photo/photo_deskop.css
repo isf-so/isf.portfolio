@@ -14,7 +14,12 @@
   scrollbar-color: rgba(102, 51, 153, 0) rgba(0, 0, 0, 0);
   scrollbar-width: none;
 }
-
+.deskop{
+  display: block;
+}
+.mobil{
+  display: none;
+}
 body,
 html {
   height: 100vh;

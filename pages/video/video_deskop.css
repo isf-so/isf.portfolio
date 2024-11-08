@@ -12,7 +12,13 @@
   --snap-count: 8;
   /* match scss var */
 }
+.deskop {
+  display: none;
+}
 
+.mobil {
+  display: block;
+}
 body, html {
   height: 100vh;
   margin: 0;
