@@ -4,8 +4,10 @@
 a{
    text-decoration: none;
 }
-body{
+html, body {
+   overflow-x: hidden;
    background-color: #000;
+   margin: 0;
 }
 
 h1{
