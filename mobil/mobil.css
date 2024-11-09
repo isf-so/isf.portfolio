@@ -1,9 +1,26 @@
 body {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
     color: white;
     margin: 0;
     overflow-x: hidden;
     font-family: 'Red Hat Text', sans-serif;
+}
+
+.loader {
+    display: flex;
+    position: relative;
+    z-index: 99999;
+    justify-content: center;
+    background-color: #000000;
+    height: 100vh;
+}
+
+.loader>svg {
+    margin-top: 25vh;
+    max-width: 100%;
+    /* Empêche le débordement horizontal */
+    max-height: 100vh;
+    /* Empêche le débordement vertical */
 }
 
 ::selection {

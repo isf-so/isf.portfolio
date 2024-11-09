@@ -1,7 +1,13 @@
+function load() {
+    document.querySelector(".loader").remove();
+    document.documentElement.style.overflow = ""; // Supprime overflow: hidden de <html>
+    document.body.style.overflow = ""; // Supprime overflow: hidden de <body>
+}
+
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
 })
 
 document.addEventListener('click', () => {
@@ -11,5 +17,3 @@ document.addEventListener('click', () => {
         cursor.classList.remove("expand");
     }, 500)
 })
-
-
