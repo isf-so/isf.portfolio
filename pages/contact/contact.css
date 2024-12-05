@@ -1,0 +1,117 @@
+/* Style général pour le body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input{
+    max-width: 300px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Section contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style du formulaire */
+form {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style des labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Style des champs de formulaire */
+input, textarea {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+/* Animation au survol des champs */
+input:focus, textarea:focus {
+    border-color: #00ffcc;
+    outline: none;
+}
+
+/* Style du bouton */
+button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
