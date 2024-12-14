@@ -10,10 +10,15 @@ body {
     height: 100vh;
 }
 
-a{
+.a>a {
     text-decoration: none;
     color: white;
 }
+
+.a {
+    text-align: center;
+}
+
 .form {
     background-color: #15172b;
     border-radius: 20px;
@@ -25,6 +30,7 @@ a{
 
 .title {
     color: #eee;
+    text-align: center;
     font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -32,9 +38,11 @@ a{
 }
 
 .subtitle {
+    text-align: center;
     color: #eee;
     font-family: sans-serif;
-    font-size: 0.8em; /* Taille relative à l'élément parent */
+    font-size: 0.6em;
+    /* Taille relative à l'élément parent */
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -133,7 +141,8 @@ a{
     background-color: white;
     color: black;
 }
+
 .submit-btn:hover {
-    background-color:white;
+    background-color: white;
     color: black;
 }
