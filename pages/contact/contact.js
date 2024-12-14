@@ -1,6 +1,5 @@
 const contactForm = document.querySelector("#contact-form");
 const submitBtn = document.querySelector(".submit-btn");
-const nameInput = document.querySelector("#user_name");
 const emailInput = document.querySelector("#user_email");
 const messageInput = document.querySelector("#message");
 const subjectInput = document.querySelector("#user_subject");
@@ -34,4 +33,3 @@ contactForm.addEventListener("submit", (e) => {
             submitBtn.innerText = "Erreur d'envoi";
         });
 });
-
