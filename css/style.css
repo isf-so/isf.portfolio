@@ -4,8 +4,8 @@
   --secondary-color: #ffffff;
   --accent-color: #d0d0d0;
   --gray-light: #f5f5f5;
-  --gray-medium: #999999;
-  --gray-dark: #333333;
+  --gray-medium: #535353;
+  --gray-dark: #000000;
   --transition-slow: 0.5s ease;
   --transition-medium: 0.3s ease;
   --transition-fast: 0.2s ease;
@@ -285,19 +285,19 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); 
 }
 
 .slide:nth-child(1) .slide-image {
-  background-image: url('https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('../photo/porsche.jpg');
 }
 
 .slide:nth-child(2) .slide-image {
-  background-image: url('https://images.pexels.com/photos/2873479/pexels-photo-2873479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('../photo/slide\ video.jpg');
 }
 
 .slide:nth-child(3) .slide-image {
-  background-image: url('https://images.pexels.com/photos/3379942/pexels-photo-3379942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('../photo/slide\ pour\ moi.jpg');
 }
 
 .slider-controls {
@@ -976,9 +976,9 @@ textarea:focus {
 
 .modal-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 2rem;
+  top: -30px;
+  right: 0px;
+  font-size: 4rem;
   color: var(--primary-color);
   cursor: pointer;
   z-index: 10;
@@ -1095,3 +1095,18 @@ textarea:focus {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
