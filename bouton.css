@@ -1,4 +1,10 @@
 @layer base, demo;
+@media only screen and (max-width: 1000px) {
+  .content {
+    display: none;
+    overflow-x: hidden;
+  }
+}
 
 @layer demo {
   :root {
