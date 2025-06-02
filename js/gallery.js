@@ -97,24 +97,25 @@ const videographyItems = [
     id: 1,
     title: 'Graphiste : Un métier de passion et de créativité – Interview avec Louanne Atienza',
     category: 'Interview',
-    thumbnail: 'https://img.youtube.com/vi/qi8RQ_vqVv4/0.jpg',  // Miniature de la vidéo
-    videoUrl: 'https://www.youtube.com/embed/qi8RQ_vqVv4', // URL d'intégration pour la vidéo
+    thumbnail: 'https://img.youtube.com/vi/qi8RQ_vqVv4/maxresdefault.jpg',  // Miniature HD
+    videoUrl: 'https://www.youtube.com/embed/qi8RQ_vqVv4?controls=0&disablekb=1&modestbranding=1&rel=0', // Lecture intégrée avec options
     description: 'Cette vidéo plonge dans le métier de graphiste à travers une interview de Louanne Atienza.',
     date: '14 Mars 2025',
     client: '©Parcoursmetiers - IUT de Mulhouse 2025',
     services: 'Interview de Louanne Atienza'
   },
-  // {
-  //   id: 2,
-  //   title: 'Travel Documentary',
-  //   category: 'documentary',
-  //   thumbnail: 'https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   videoUrl: 'https://player.vimeo.com/video/824804225',
-  //   description: 'An immersive documentary exploring diverse cultures and landscapes through an authentic storytelling approach.',
-  //   date: 'August 2024',
-  //   client: 'Travel Channel',
-  //   services: 'Documentary Filming, Editing'
-  // },
+  {
+    id: 2,
+    title: "Elle raconte l'enfer d'Auschwitz : une mémoire pour ne pas oublier",
+    category: 'Documentaire',
+    thumbnail: 'https://img.youtube.com/vi/K3Yx8Vq4TkA/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/embed/K3Yx8Vq4TkA?controls=0&disablekb=1&modestbranding=1&rel=0',
+    description: ' ',
+    date: 'Mai 2025',
+    client: ' ',
+    services: ' '
+  },
+
   // {
   //   id: 3,
   //   title: 'Wedding Film',
