@@ -29,21 +29,20 @@ const photographyItems = [
     client: '',
     services: 'Portrait Photographie'
   },
-  // {
-  //   id: 3,
-  //   title: 'Wedding Moments',
-  //   category: 'event',
-  //   image: 'https://images.pexels.com/photos/1244627/pexels-photo-1244627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   thumbnails: [
-  //     'https://images.pexels.com/photos/1244627/pexels-photo-1244627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //     'https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //     'https://images.pexels.com/photos/3650469/pexels-photo-3650469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-  //   ],
-  //   description: 'Capturing the magic of wedding celebrations through a documentary approach that preserves authentic emotions and special moments. This collection focuses on the candid interactions and subtle details that make each wedding unique, creating a visual narrative of the day\'s events.',
-  //   date: 'July 2024',
-  //   client: 'Emily & James',
-  //   services: 'Event Photography, Wedding'
-  // },
+  {
+    id: 3,
+    title: 'Paris',
+    category: 'Photo de rue',
+    image: 'photoparis/image2.png',
+    thumbnails: [
+      'photoparis/image2.png',
+      'photoparis/image1.png',
+    ],
+    description: 'Moments volés au cœur de la ville : regards furtifs, silhouettes en mouvement. L’âme de Paris en quelques clichés.',
+    date: 'Mai 2025',
+    client: 'moi même',
+    services: ' '
+  },
   // {
   //   id: 4,
   //   title: 'Mountain Serenity',
