@@ -289,7 +289,7 @@ body {
 }
 
 .slide:nth-child(1) .slide-image {
-  background-image: url('../photo/porsche.jpg');
+  background-image: url('../photo mariage/P1014866sans poubelle.png');
 }
 
 .slide:nth-child(2) .slide-image {
@@ -1017,7 +1017,7 @@ textarea:focus {
 
 .project-main-image {
   width: 100%;
-  height: 600px;
+  height: 650px;
   object-fit:contain;
   margin-bottom: 1rem;
 }
