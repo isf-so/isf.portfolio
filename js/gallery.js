@@ -4,17 +4,17 @@
 const photographyItems = [
   {
     id: 1,
-    title: 'Urban Landscapes',
+    title: 'Mariage',
     category: 'Mariage',
-    image: 'https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'photo mariage/P1014866sans poubelle.png',
     thumbnails: [
-      'https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'photo mariage/P1014776.jpg',
+      'photo mariage/P1014866sans poubelle.png',
       'https://images.pexels.com/photos/1209978/pexels-photo-1209978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     ],
     description: 'A series exploring the geometric patterns and contrasts of modern urban architecture against the backdrop of city life.',
-    date: 'September 2024',
-    client: 'Personal Project',
+    date: 'Mai 2025',
+    client: 'Youssef Kouiri',
     services: 'Photography, Composition'
   },
   // {
