@@ -20,7 +20,7 @@ const photographyItems = [
     id: 2,
     title: 'Moine',
     category: 'Portrait',
-    image: '../photoparis/image3.png',
+    image: 'photoparis/image3.png',
     thumbnails: [
 
     ],
