@@ -10,28 +10,25 @@ const photographyItems = [
     thumbnails: [
       'photo mariage/P1014776.jpg',
       'photo mariage/P1014866sans poubelle.png',
-      'https://images.pexels.com/photos/1209978/pexels-photo-1209978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     ],
     description: 'A series exploring the geometric patterns and contrasts of modern urban architecture against the backdrop of city life.',
     date: 'Mai 2025',
     client: 'Youssef Kouiri',
-    services: 'Photography, Composition'
+    services: 'Photographie'
   },
-  // {
-  //   id: 2,
-  //   title: 'Portrait Series',
-  //   category: 'portrait',
-  //   image: 'https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   thumbnails: [
-  //     'https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //     'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //     'https://images.pexels.com/photos/1197132/pexels-photo-1197132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-  //   ],
-  //   description: 'An intimate portrait series capturing the essence of individuals through thoughtful composition and natural lighting. Each portrait tells a unique story, reflecting the personality and character of the subject through careful attention to detail and expressive moments.',
-  //   date: 'August 2024',
-  //   client: 'Various',
-  //   services: 'Portrait Photography, Editing'
-  // },
+  {
+    id: 2,
+    title: 'Moine',
+    category: 'Portrait',
+    image: '../photo paris/image3.jpeg',
+    thumbnails: [
+
+    ],
+    description: '',
+    date: 'Mai 2025',
+    client: '',
+    services: 'Portrait Photographie'
+  },
   // {
   //   id: 3,
   //   title: 'Wedding Moments',
