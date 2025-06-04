@@ -22,11 +22,13 @@ const photographyItems = [
     category: 'Portrait',
     image: 'photoparis/image3.png',
     thumbnails: [
-
+      'photoparis/moine2.png',
+      'photoparis/image3.png',
+      'photoparis/moine1.png',
     ],
-    description: '',
+    description: 'Un moine en robe safran marche sereinement devant le Louvre, contrastant avec l’effervescence du lieu et apportant une touche de spiritualité inattendue au cœur de Paris.',
     date: 'Mai 2025',
-    client: '',
+    client: 'Moine',
     services: 'Portrait Photographie'
   },
   {
@@ -37,6 +39,7 @@ const photographyItems = [
     thumbnails: [
       'photoparis/image2.png',
       'photoparis/image1.png',
+      'photoparis/image9.png',
     ],
     description: 'Moments volés au cœur de la ville : regards furtifs, silhouettes en mouvement. L’âme de Paris en quelques clichés.',
     date: 'Mai 2025',
@@ -103,17 +106,17 @@ const videographyItems = [
     client: '©Parcoursmetiers - IUT de Mulhouse 2025',
     services: 'Interview de Louanne Atienza'
   },
-  {
-    id: 2,
-    title: "Elle raconte l'enfer d'Auschwitz : une mémoire pour ne pas oublier",
-    category: 'Documentaire',
-    thumbnail: 'https://img.youtube.com/vi/K3Yx8Vq4TkA/maxresdefault.jpg',
-    videoUrl: 'https://www.youtube.com/embed/K3Yx8Vq4TkA?controls=0&disablekb=1&modestbranding=1&rel=0',
-    description: ' ',
-    date: 'Mai 2025',
-    client: ' ',
-    services: ' '
-  },
+  // {
+  //   id: 2,
+  //   title: "Elle raconte l'enfer d'Auschwitz : une mémoire pour ne pas oublier",
+  //   category: 'Documentaire',
+  //   thumbnail: 'https://img.youtube.com/vi/K3Yx8Vq4TkA/maxresdefault.jpg',
+  //   videoUrl: 'https://www.youtube.com/embed/K3Yx8Vq4TkA?controls=0&disablekb=1&modestbranding=1&rel=0',
+  //   description: ' ',
+  //   date: 'Mai 2025',
+  //   client: ' ',
+  //   services: ' '
+  // },
 
   // {
   //   id: 3,
