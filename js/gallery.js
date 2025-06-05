@@ -11,7 +11,7 @@ const photographyItems = [
       'photo mariage/P1014776.jpg',
       'photo mariage/P1014866sans poubelle.png',
     ],
-    description: 'A series exploring the geometric patterns and contrasts of modern urban architecture against the backdrop of city life.',
+    description: 'Mon tout premier mariage, et beaucoup de fierté, un résultat qui me ressemble. ',
     date: 'Mai 2025',
     client: 'Youssef Kouiri',
     services: 'Photographie'
