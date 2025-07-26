@@ -146,71 +146,403 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="section-header">
-            <h2 class="section-title">Témoignages de clients</h2>
-        </div>
-        <div class="testimonials-container">
-            <div class="testimonial fade-in">
-                <div class="quote">"Photographe pro et à l’écoute. Soucieux de la qualité des photos et du bien être de
-                    ces clients"</div>
-                <div class="client">
-                    <div class="client-name">Youssef Kouiri</div>
-                    <div class="client-project">Mariage</div>
+
+
+
+    <div class="vcarousel-body">
+        <div class="vcarousel-container">
+            <h1 class="vcarousel-title">Short Videos</h1>
+            <p class="vcarousel-subtitle">Découvrez mes créations courtes.</p>
+
+            <div class="vcarousel-viewport">
+                <div class="vcarousel-wrapper" id="vcarouselWrapper">
+                    <div class="vcarousel-slide" style="position: relative;">
+                        <iframe src="https://www.youtube.com/embed/T3nwDiQu7b4?rel=0&enablejsapi=1&loop=1"
+                            frameborder="0" allowfullscreen style="width:100%; height:300px;">
+                        </iframe>
+
+
+                        <div class="vcarousel-progress" id="vcarouselProgress"></div>
+                    </div>
+
+                    <!-- <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="vcarousel-slide">
+                        <video muted loop preload="metadata">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="vcarousel-overlay">
+                            <div class="vcarousel-play-btn"></div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="testimonial fade-in">
-                <div class="quote">"Prochainement"</div>
-                <div class="client">
-                    <div class="client-name">...</div>
-                    <div class="client-project">...</div>
+
+            <div class="vcarousel-navigation">
+                <div class="vcarousel-nav-arrow vcarousel-prev" id="vcarouselPrevBtn"></div>
+                <div class="vcarousel-dots" id="vcarouselDots">
+                    <div class="vcarousel-dot vcarousel-active" data-index="0"></div>
+                    <div class="vcarousel-dot" data-index="1"></div>
+                    <div class="vcarousel-dot" data-index="2"></div>
+                    <div class="vcarousel-dot" data-index="3"></div>
+                    <div class="vcarousel-dot" data-index="4"></div>
+                    <div class="vcarousel-dot" data-index="5"></div>
+                    <div class="vcarousel-dot" data-index="6"></div>
+                    <div class="vcarousel-dot" data-index="7"></div>
+                </div>
+                <div class="vcarousel-nav-arrow vcarousel-next" id="vcarouselNextBtn"></div>
+            </div>
+        </div>
+
+        <script>
+            class VideoCarousel {
+                constructor() {
+                    this.currentIndex = 0;
+                    this.totalSlides = 8;
+                    this.autoSlideInterval = 4000;
+                    this.progressInterval = null;
+                    this.autoSlideTimer = null;
+                    this.isPlaying = true;
+
+                    this.wrapper = document.getElementById('vcarouselWrapper');
+                    this.dots = document.querySelectorAll('.vcarousel-dot');
+                    this.prevBtn = document.getElementById('vcarouselPrevBtn');
+                    this.nextBtn = document.getElementById('vcarouselNextBtn');
+                    this.progressBar = document.getElementById('vcarouselProgress');
+                    this.videos = document.querySelectorAll('video');
+                    this.playButtons = document.querySelectorAll('.vcarousel-play-btn');
+
+                    this.init();
+                }
+
+                init() {
+                    this.updateSlide();
+                    this.startAutoSlide();
+                    this.addEventListeners();
+                }
+
+                addEventListeners() {
+                    // Navigation par flèches
+                    this.prevBtn.addEventListener('click', () => this.prevSlide());
+                    this.nextBtn.addEventListener('click', () => this.nextSlide());
+
+                    // Navigation par dots
+                    this.dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => this.goToSlide(index));
+                    });
+
+                    // Play buttons
+                    this.playButtons.forEach((button, index) => {
+                        button.addEventListener('click', () => this.playVideo(index));
+                    });
+
+                    // Pause au survol
+                    this.wrapper.addEventListener('mouseenter', () => this.pauseAutoSlide());
+                    this.wrapper.addEventListener('mouseleave', () => this.resumeAutoSlide());
+
+                    // Support tactile
+                    let startX = 0;
+                    let endX = 0;
+
+                    this.wrapper.addEventListener('touchstart', (e) => {
+                        startX = e.touches[0].clientX;
+                        this.pauseAutoSlide();
+                    });
+
+                    this.wrapper.addEventListener('touchend', (e) => {
+                        endX = e.changedTouches[0].clientX;
+                        const diff = startX - endX;
+
+                        if (Math.abs(diff) > 50) {
+                            if (diff > 0) {
+                                this.nextSlide();
+                            } else {
+                                this.prevSlide();
+                            }
+                        }
+
+                        setTimeout(() => this.resumeAutoSlide(), 1000);
+                    });
+
+                    // Gestion des vidéos
+                    this.videos.forEach((video, index) => {
+                        video.addEventListener('ended', () => {
+                            this.stopVideo(index);
+                        });
+                    });
+                }
+
+                playVideo(index) {
+                    const video = this.videos[index];
+                    const slide = video.closest('.vcarousel-slide');
+
+                    if (video.paused) {
+                        video.play();
+                        slide.classList.add('vcarousel-playing');
+                        this.pauseAutoSlide();
+                    } else {
+                        video.pause();
+                        slide.classList.remove('vcarousel-playing');
+                        this.resumeAutoSlide();
+                    }
+                }
+
+                stopVideo(index) {
+                    const video = this.videos[index];
+                    const slide = video.closest('.vcarousel-slide');
+
+                    video.pause();
+                    video.currentTime = 0;
+                    slide.classList.remove('vcarousel-playing');
+                    this.resumeAutoSlide();
+                }
+
+                stopAllVideos() {
+                    this.videos.forEach((video, index) => {
+                        this.stopVideo(index);
+                    });
+                }
+
+                updateSlide() {
+                    // Arrêter toutes les vidéos
+                    this.stopAllVideos();
+
+                    // Déplacement du carousel
+                    const translateX = -this.currentIndex * 100;
+                    this.wrapper.style.transform = `translateX(${translateX}%)`;
+
+                    // Mise à jour des dots
+                    this.dots.forEach((dot, index) => {
+                        dot.classList.toggle('vcarousel-active', index === this.currentIndex);
+                    });
+
+                    // Mise à jour des flèches
+                    this.prevBtn.classList.toggle('vcarousel-disabled', this.currentIndex === 0);
+                    this.nextBtn.classList.toggle('vcarousel-disabled', this.currentIndex === this.totalSlides - 1);
+                }
+
+                nextSlide() {
+                    if (this.currentIndex < this.totalSlides - 1) {
+                        this.currentIndex++;
+                    } else {
+                        this.currentIndex = 0;
+                    }
+                    this.updateSlide();
+                    this.resetProgress();
+                }
+
+                prevSlide() {
+                    if (this.currentIndex > 0) {
+                        this.currentIndex--;
+                    } else {
+                        this.currentIndex = this.totalSlides - 1;
+                    }
+                    this.updateSlide();
+                    this.resetProgress();
+                }
+
+                goToSlide(index) {
+                    this.currentIndex = index;
+                    this.updateSlide();
+                    this.resetProgress();
+                }
+
+                startAutoSlide() {
+                    this.startProgress();
+                    this.autoSlideTimer = setInterval(() => {
+                        this.nextSlide();
+                    }, this.autoSlideInterval);
+                }
+
+                pauseAutoSlide() {
+                    if (this.autoSlideTimer) {
+                        clearInterval(this.autoSlideTimer);
+                        this.autoSlideTimer = null;
+                    }
+                    this.stopProgress();
+                    this.isPlaying = false;
+                }
+
+                resumeAutoSlide() {
+                    if (!this.isPlaying) {
+                        this.startAutoSlide();
+                        this.isPlaying = true;
+                    }
+                }
+
+                startProgress() {
+                    let progress = 0;
+                    this.progressBar.style.width = '0%';
+
+                    this.progressInterval = setInterval(() => {
+                        progress += (100 / (this.autoSlideInterval / 100));
+                        this.progressBar.style.width = `${Math.min(progress, 100)}%`;
+
+                        if (progress >= 100) {
+                            this.resetProgress();
+                        }
+                    }, 100);
+                }
+
+                stopProgress() {
+                    if (this.progressInterval) {
+                        clearInterval(this.progressInterval);
+                        this.progressInterval = null;
+                    }
+                }
+
+                resetProgress() {
+                    this.stopProgress();
+                    if (this.isPlaying) {
+                        this.startProgress();
+                    }
+                }
+            }
+
+            // Initialisation du carousel au chargement de la page
+            document.addEventListener('DOMContentLoaded', () => {
+                new VideoCarousel();
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-header">
+                <h2 class="section-title">Témoignages de clients</h2>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial fade-in">
+                    <div class="quote">"Photographe pro et à l’écoute. Soucieux de la qualité des photos et du bien être
+                        de
+                        ces clients"</div>
+                    <div class="client">
+                        <div class="client-name">Youssef Kouiri</div>
+                        <div class="client-project">Mariage</div>
+                    </div>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="quote">"Prochainement"</div>
+                    <div class="client">
+                        <div class="client-name">...</div>
+                        <div class="client-project">...</div>
+                    </div>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="quote">"Prochainement"</div>
+                    <div class="client">
+                        <div class="client-name">...</div>
+                        <div class="client-project">...</div>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial fade-in">
-                <div class="quote">"Prochainement"</div>
-                <div class="client">
-                    <div class="client-name">...</div>
-                    <div class="client-project">...</div>
+        </section>
+        <br>
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="#" class="logo-link">G<span>.Sofiane</span></a>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#photography">Photographie</a></li>
+                        <li><a href="#videography">Vidéographie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <a style="color :white;" id="contact" href="mailto:isf.contactpro@gmail.com"
+                        class="footer-email">isf.contactpro@gmail.com</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; SOFIANE</p>
+            </div>
+        </footer>
+        <!-- Project Modal -->
+        <div class="project-modal">
+            <div class="modal-container">
+                <div class="modal-close">&times;</div>
+                <div class="modal-content">
+                    <!-- Content will be dynamically added by JavaScript -->
                 </div>
             </div>
         </div>
-    </section>
-    <br>
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <a href="#" class="logo-link">G<span>.Sofiane</span></a>
-            </div>
-            <div class="footer-nav">
-                <ul class="footer-links">
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#photography">Photographie</a></li>
-                    <li><a href="#videography">Vidéographie</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <a style="color :white;" id="contact" href="mailto:isf.contactpro@gmail.com"
-                    class="footer-email">isf.contactpro@gmail.com</a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; SOFIANE</p>
-        </div>
-    </footer>
-    <!-- Project Modal -->
-    <div class="project-modal">
-        <div class="modal-container">
-            <div class="modal-close">&times;</div>
-            <div class="modal-content">
-                <!-- Content will be dynamically added by JavaScript -->
-            </div>
-        </div>
-    </div>
-    <script src="js/main.js" type="module"></script>
-    <script src="bouton.js"></script>
+        <script src="js/main.js" type="module"></script>
+        <script src="bouton.js"></script>
 </body>
 
 
