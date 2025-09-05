@@ -125,6 +125,201 @@
         <div class="section-footer">
             <a href="#" class="btn secondary-btn">View More</a>
         </div>
+
+
+        <hr>
+
+
+
+
+
+
+
+    <div class="illus-container">
+        <h1 class="illus-title">Illustrations</h1>
+        <div class="illus-divider"></div>
+        
+        <nav class="illus-nav">
+            <div class="illus-nav-item illus-active" data-category="tout">TOUT</div>
+            <div class="illus-nav-item" data-category="digital">DIGITAL</div>
+            <div class="illus-nav-item" data-category="traditional">TRADITIONNEL</div>
+            <div class="illus-nav-item" data-category="concept">CONCEPT ART</div>
+            <div class="illus-nav-item" data-category="character">PERSONNAGES</div>
+        </nav>
+
+        <div class="illus-gallery">
+            <div class="illus-item" data-category="digital">
+                <div class="illus-category">Digital</div>
+                <img src="https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Illustration digitale" class="illus-image">
+                <div class="illus-overlay">
+                    <div class="illus-overlay-title">Art Digital Moderne</div>
+                    <div class="illus-overlay-subtitle">Création numérique originale</div>
+                </div>
+            </div>
+
+            <div class="illus-item" data-category="traditional">
+                <div class="illus-category">Traditionnel</div>
+                <img src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Illustration traditionnelle" class="illus-image">
+                <div class="illus-overlay">
+                    <div class="illus-overlay-title">Technique Mixte</div>
+                    <div class="illus-overlay-subtitle">Aquarelle et encre</div>
+                </div>
+            </div>
+
+            <div class="illus-item" data-category="concept">
+                <div class="illus-category">Concept Art</div>
+                <img src="https://images.pexels.com/photos/1572849/pexels-photo-1572849.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Concept art" class="illus-image">
+                <div class="illus-overlay">
+                    <div class="illus-overlay-title">Environnement Fantastique</div>
+                    <div class="illus-overlay-subtitle">Design conceptuel</div>
+                </div>
+            </div>
+
+            <div class="illus-item" data-category="character">
+                <div class="illus-category">Personnages</div>
+                <img src="https://images.pexels.com/photos/1646954/pexels-photo-1646954.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Illustration de personnage" class="illus-image">
+                <div class="illus-overlay">
+                    <div class="illus-overlay-title">Design de Personnage</div>
+                    <div class="illus-overlay-subtitle">Création originale</div>
+                </div>
+            </div>
+
+            <div class="illus-item" data-category="digital">
+                <div class="illus-category">Digital</div>
+                <img src="https://images.pexels.com/photos/1646951/pexels-photo-1646951.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Art numérique" class="illus-image">
+                <div class="illus-overlay">
+                    <div class="illus-overlay-title">Composition Abstraite</div>
+                    <div class="illus-overlay-subtitle">Expérimentation digitale</div>
+                </div>
+            </div>
+
+            <div class="illus-item" data-category="traditional">
+                <div class="illus-category">Traditionnel</div>
+                <img src="https://images.pexels.com/photos/1183986/pexels-photo-1183986.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dessin traditionnel" class="illus-image">
+                <div class="illus-overlay">
+                    <div class="illus-overlay-title">Étude au Crayon</div>
+                    <div class="illus-overlay-subtitle">Technique classique</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour agrandir les images -->
+    <div class="illus-modal">
+        <span class="illus-close">&times;</span>
+        <img class="illus-modal-content">
+    </div>
+
+    <script>
+        // Système de filtrage des catégories
+        const illusNavItems = document.querySelectorAll('.illus-nav-item');
+        const illusItems = document.querySelectorAll('.illus-item');
+
+        illusNavItems.forEach(navItem => {
+            navItem.addEventListener('click', () => {
+                // Retirer la classe active de tous les items
+                illusNavItems.forEach(item => item.classList.remove('illus-active'));
+                // Ajouter la classe active à l'item cliqué
+                navItem.classList.add('illus-active');
+
+                const selectedCategory = navItem.getAttribute('data-category');
+
+                illusItems.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    
+                    if (selectedCategory === 'tout' || itemCategory === selectedCategory) {
+                        item.style.display = 'block';
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        
+                        setTimeout(() => {
+                            item.style.transition = 'all 0.4s ease';
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.transition = 'all 0.3s ease';
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(-20px)';
+                        
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Modal pour agrandir les images
+        const illusModal = document.querySelector('.illus-modal');
+        const illusModalImg = document.querySelector('.illus-modal-content');
+        const illusClose = document.querySelector('.illus-close');
+
+        illusItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('.illus-image');
+                illusModal.style.display = 'block';
+                illusModalImg.src = img.src;
+                
+                // Animation d'ouverture
+                illusModal.style.opacity = '0';
+                setTimeout(() => {
+                    illusModal.style.transition = 'opacity 0.3s ease';
+                    illusModal.style.opacity = '1';
+                }, 10);
+            });
+        });
+
+        // Fermer le modal
+        illusClose.addEventListener('click', () => {
+            illusModal.style.opacity = '0';
+            setTimeout(() => {
+                illusModal.style.display = 'none';
+            }, 300);
+        });
+
+        // Fermer le modal en cliquant à l'extérieur
+        illusModal.addEventListener('click', (e) => {
+            if (e.target === illusModal) {
+                illusModal.style.opacity = '0';
+                setTimeout(() => {
+                    illusModal.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Animation parallax subtile au scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.illus-item');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = 0.1 + (index * 0.02);
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Effet de typing pour le titre
+        const illusTitle = document.querySelector('.illus-title');
+        const originalText = illusTitle.textContent;
+        illusTitle.textContent = '';
+        
+        let i = 0;
+        const typeWriter = () => {
+            if (i < originalText.length) {
+                illusTitle.textContent += originalText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        };
+        
+        // Démarrer l'animation après un petit délai
+        setTimeout(typeWriter, 500);
+    </script>
+
+
+
+
     </section>
 
     <!-- Videography Section -->
@@ -145,6 +340,9 @@
             <a href="#" class="btn secondary-btn">View More</a>
         </div>
     </section>
+
+
+
 
     <div class="vcarousel-body">
         <div class="vcarousel-container">
@@ -539,6 +737,10 @@
                 </div>
             </div>
         </div>
+
+
+
+        
         <script src="js/main.js" type="module"></script>
         <script src="bouton.js"></script>
 </body>
