@@ -108,17 +108,18 @@ const videographyItems = [
     client: '©Parcoursmetiers - IUT de Mulhouse 2025',
     services: 'Interview de Louanne Atienza'
   },
-  // {
-  //   id: 2,
-  //   title: "Elle raconte l'enfer d'Auschwitz : une mémoire pour ne pas oublier",
-  //   category: 'Documentaire',
-  //   thumbnail: 'https://img.youtube.com/vi/K3Yx8Vq4TkA/maxresdefault.jpg',
-  //   videoUrl: 'https://www.youtube.com/embed/K3Yx8Vq4TkA?controls=0&disablekb=1&modestbranding=1&rel=0',
-  //   description: ' ',
-  //   date: 'Mai 2025',
-  //   client: ' ',
-  //   services: ' '
-  // },
+  {
+    id: 2,
+    title: "Présentation EJDA Mulhouse",
+    category: 'Documentaire',
+    thumbnail: 'https://img.youtube.com/vi/oCcRKK2gAqc/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/embed/oCcRKK2gAqc?controls=0&disablekb=1&modestbranding=1&rel=0',
+    description: "Vidéo de présentation de l'École Jeanne d'Arc de Mulhouse",
+    date: 'Juin 2025',
+    client: "Institution Sainte Jeanne d'Arc",
+    services: 'Captation, montage et habillage vidéo'
+  },
+
 
   // {
   //   id: 3,
