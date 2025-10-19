@@ -28,7 +28,7 @@ const photographyItems = [
       'photoparis/image3.png',
       'photoparis/moine1.png',
     ],
-    description: 'Un moine en robe safran marche sereinement devant le Louvre, contrastant avec l’effervescence du lieu et apportant une touche de spiritualité inattendue au cœur de Paris.',
+    description: 'Un moine en robe safran marche sereinement devant le Louvre. Une rencontre inattendue au cœur de Paris.',
     date: 'Mai 2025',
     client: 'Moine',
     services: 'Portrait Photographie'
@@ -48,21 +48,23 @@ const photographyItems = [
     client: 'moi même',
     services: ' '
   },
-  // {
-  //   id: 4,
-  //   title: 'Mountain Serenity',
-  //   category: 'landscape',
-  //   image: 'https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   thumbnails: [
-  //     'https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //     'https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //     'https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-  //   ],
-  //   description: 'A majestic landscape series showcasing the grandeur and tranquility of mountain environments. Through careful attention to lighting and composition, these images capture the dramatic beauty of natural landscapes and evoke a sense of peace and wonder in the viewer.',
-  //   date: 'June 2024',
-  //   client: 'Nature Magazine',
-  //   services: 'Landscape Photography, Post-Processing'
-  // },
+  {
+    id: 4,
+    title: 'Côté Sushi',
+    category: 'Commercial',
+    image: '../sushi/4.png',
+    thumbnails: [
+      '../sushi/1.jpg',
+      '../sushi/2.png',
+      '../sushi/3.png',
+      '../sushi/4.png'
+    ],
+    description: 'L’univers du restaurant Côté Sushi, un équilibre entre tradition japonaise et modernité de la marque.',
+    date: 'octobre 2025',
+    client: 'Côté Sushi',
+    services: 'Photographie commerciale'
+  }
+
   // {
   //   id: 5,
   //   title: 'Fashion Editorial',
