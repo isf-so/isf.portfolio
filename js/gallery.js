@@ -52,12 +52,12 @@ const photographyItems = [
     id: 4,
     title: 'Côté Sushi',
     category: 'Commercial',
-    image: '../sushi/4.png',
+    image: 'sushi/4.png',
     thumbnails: [
-      '../sushi/1.jpg',
-      '../sushi/2.png',
-      '../sushi/3.png',
-      '../sushi/4.png'
+      'sushi/1.jpg',
+      'sushi/2.png',
+      'sushi/3.png',
+      'sushi/4.png'
     ],
     description: 'L’univers du restaurant Côté Sushi, un équilibre entre tradition japonaise et modernité de la marque.',
     date: 'octobre 2025',
