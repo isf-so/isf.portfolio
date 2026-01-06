@@ -1312,29 +1312,42 @@ textarea:focus {
   width: 100%;
   overflow: hidden;
   background: #fff;
-  padding: 20px 0;
+  padding: clamp(20px, 5vw, 60px) 0;
+}
+
+/* TITRE */
+.carousel h2 {
+  text-align: center;
+  font-size: clamp(20px, 4vw, 32px);
+  margin-bottom: clamp(20px, 4vw, 40px);
+  font-weight: 600;
 }
 
 /* PISTE QUI BOUGE */
 .carousel-track {
   display: flex;
+  align-items: center;
+  gap: clamp(20px, 5vw, 80px);
   width: max-content;
-  animation: scroll 25s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 /* LOGOS */
 .carousel-track img {
-  height: 80px; /* ajuste la taille */
-  margin: 0 40px;
+  height: clamp(45px, 8vw, 80px);
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.8;
-  transition: 0.3s;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
-.carousel-track img:hover {
-  filter: grayscale(0);
-  opacity: 1;
+/* HOVER (desktop uniquement) */
+@media (hover: hover) {
+  .carousel-track img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 /* ANIMATION */
@@ -1347,17 +1360,9 @@ textarea:focus {
   }
 }
 
-/* RESPONSIVE */
+/* MOBILE : animation plus lente */
 @media (max-width: 768px) {
-  .carousel-track img {
-    height: 60px;
-    margin: 0 25px;
+  .carousel-track {
+    animation-duration: 45s;
   }
 }
-
-  .carousel h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 30px;
-      font-weight: 600;
-    }
