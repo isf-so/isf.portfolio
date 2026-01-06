@@ -1306,3 +1306,51 @@ textarea:focus {
   }
 }
 
+
+/* CONTENEUR GLOBAL */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px 0;
+}
+
+/* PISTE QUI BOUGE */
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* LOGOS */
+.carousel-track img {
+  height: 80px; /* ajuste la taille */
+  margin: 0 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.carousel-track img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .carousel-track img {
+    height: 60px;
+    margin: 0 25px;
+  }
+}
