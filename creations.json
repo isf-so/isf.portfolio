@@ -1,0 +1,22 @@
+{
+  "creations": [
+    {
+      "id": 1,
+      "title": "Graphiste : Interview - Louanne Atienza",
+      "url": "https://youtu.be/qi8RQ_vqVv4",
+      "type": "video",
+      "platform": "youtube",
+      "date": "2024",
+      "description": "Interview réalisée avec Louanne Atienza, graphiste passionnée, explorant les différents aspects de ce métier créatif. Ce projet met en lumière les défis et les joies du métier de graphiste à travers le témoignage d'une professionnelle expérimentée."
+    },
+    {
+      "id": 2,
+      "title": "Présentation EJDA Mulhouse",
+      "url": "https://www.youtube.com/watch?v=oCcRKK2gAqc",
+      "type": "video",
+      "platform": "youtube",
+      "date": "2024",
+      "description": "Vidéo de présentation de l'École de Journalisme et de Design d'Actualité (EJDA) de Mulhouse. Ce projet présente l'établissement, ses formations et son environnement académique."
+    }
+  ]
+}

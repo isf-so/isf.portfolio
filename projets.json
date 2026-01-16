@@ -1,0 +1,92 @@
+{
+  "projets": [
+    {
+      "id": 101,
+      "title": "Projet photographique 01",
+      "image": "images/mariage/fleur.jpg",
+      "type": "photo",
+      "date": "2024",
+      "description": "Description du projet photographique 01. Ce projet explore les différentes facettes de la photographie contemporaine."
+    },
+    {
+      "id": 102,
+      "title": "Projet photographique 02",
+      "image": "images/sushi/4.png",
+      "type": "photo",
+      "date": "2024",
+      "description": "Description du projet photographique 02. Une série de clichés capturant l'essence de moments uniques."
+    },
+    {
+      "id": 103,
+      "title": "Projet photographique 03",
+      "image": "images/paris/image2.png",
+      "type": "photo",
+      "date": "2024",
+      "description": "Description du projet photographique 03. Exploration visuelle et narratives à travers l'objectif."
+    },
+    {
+      "id": 104,
+      "title": "Projet photographique 04",
+      "image": "images//paris/image3.png",
+      "type": "photo",
+      "date": "2024",
+      "description": "Description du projet photographique 04. Une approche créative de la photographie documentaire."
+    },
+    {
+      "id": 105,
+      "title": "Projet photographique 05",
+      "image": "images/placeholder.svg",
+      "type": "photo",
+      "date": "2024",
+      "description": "Description du projet photographique 05. Série de portraits mettant en lumière la diversité humaine."
+    },
+    {
+      "id": 106,
+      "title": "Projet photographique 06",
+      "image": "images/placeholder.svg",
+      "type": "photo",
+      "date": "2024",
+      "description": "Description du projet photographique 06. Captures de paysages urbains et naturels."
+    },
+    {
+      "id": 201,
+      "title": "Projet graphique 01",
+      "image": "images/placeholder.svg",
+      "type": "graphisme",
+      "date": "2024",
+      "description": "Description du projet graphique 01. Identité visuelle et design pour une marque contemporaine."
+    },
+    {
+      "id": 202,
+      "title": "Projet graphique 02",
+      "image": "images/placeholder.svg",
+      "type": "graphisme",
+      "date": "2024",
+      "description": "Description du projet graphique 02. Création d'une charte graphique complète et moderne."
+    },
+    {
+      "id": 203,
+      "title": "Projet graphique 03",
+      "image": "images/placeholder.svg",
+      "type": "graphisme",
+      "date": "2024",
+      "description": "Description du projet graphique 03. Design d'affiches et supports de communication visuelle."
+    },
+    {
+      "id": 204,
+      "title": "Projet graphique 04",
+      "image": "images/placeholder.svg",
+      "type": "graphisme",
+      "date": "2024",
+      "description": "Description du projet graphique 04. Illustration et création graphique pour l'édition."
+    },
+    {
+      "id": 205,
+      "title": "Projet graphique 05",
+      "image": "images/placeholder.svg",
+      "type": "graphisme",
+      "date": "2024",
+      "description": "Description du projet graphique 05. Design web et interfaces utilisateur innovantes."
+    }
+  ]
+}
