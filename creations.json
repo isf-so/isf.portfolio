@@ -6,7 +6,7 @@
       "url": "https://youtu.be/qi8RQ_vqVv4",
       "type": "video",
       "platform": "youtube",
-      "date": "2024",
+      "date": "2025",
       "description": "Interview réalisée avec Louanne Atienza, graphiste passionnée, explorant les différents aspects de ce métier créatif. Ce projet met en lumière les défis et les joies du métier de graphiste à travers le témoignage d'une professionnelle expérimentée."
     },
     {
@@ -15,8 +15,17 @@
       "url": "https://www.youtube.com/watch?v=oCcRKK2gAqc",
       "type": "video",
       "platform": "youtube",
-      "date": "2024",
+      "date": "2025",
       "description": "Vidéo de présentation de l'École de Journalisme et de Design d'Actualité (EJDA) de Mulhouse. Ce projet présente l'établissement, ses formations et son environnement académique."
+    },
+    {
+      "id": 3,
+      "title": "Trailer : APPARENCE",
+      "url": "https://youtu.be/f8fu_hFT-U4",
+      "type": "video",
+      "platform": "youtube",
+      "date": "2026",
+      "description": "En rendant visite à son ami d’enfance pour un week-end, une jeune fille croit percevoir des signes de violence dans la famille. Persuadée que le père cache quelque chose, elle mène discrètement l’enquête. Mais au fil de ses découvertes, ses soupçons basculent, et le danger semble venir de bien plus près qu’elle ne l’imaginait…"
     }
   ]
 }

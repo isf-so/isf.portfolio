@@ -128,6 +128,7 @@ body::before {
         width: 0;
         opacity: 0;
     }
+
     to {
         width: 100%;
         opacity: 1;
@@ -140,6 +141,7 @@ body::before {
         height: 0;
         opacity: 0;
     }
+
     to {
         height: 100%;
         opacity: 1;
@@ -207,22 +209,22 @@ body::before {
 
 .contact-page .construction-lines .horizontal {
     height: 1px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(255, 255, 255, 0.15) 20%, 
-        rgba(255, 255, 255, 0.15) 80%, 
-        transparent 100%);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.15) 20%,
+            rgba(255, 255, 255, 0.15) 80%,
+            transparent 100%);
     opacity: 1;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
 }
 
 .contact-page .construction-lines .vertical {
     width: 1px;
-    background: linear-gradient(180deg, 
-        transparent 0%, 
-        rgba(255, 255, 255, 0.15) 20%, 
-        rgba(255, 255, 255, 0.15) 80%, 
-        transparent 100%);
+    background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.15) 20%,
+            rgba(255, 255, 255, 0.15) 80%,
+            transparent 100%);
     opacity: 1;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
 }
@@ -464,6 +466,12 @@ body::before {
     transition-delay: 0.5s;
 }
 
+a {
+    color: var(--text-color);
+
+    text-decoration: none;
+}
+
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
@@ -692,6 +700,7 @@ body::before {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -702,17 +711,17 @@ body::before {
     .trust-carousel-wrapper {
         margin: 0 -1.5rem;
     }
-    
+
     .trust-item {
         min-width: 150px;
         height: 100px;
         padding: 1.5rem;
     }
-    
+
     .trust-logo {
         font-size: 1rem;
     }
-    
+
     .trust-carousel-track {
         gap: 2rem;
     }
@@ -1142,7 +1151,8 @@ body::before {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
+    padding-bottom: 56.25%;
+    /* Ratio 16:9 */
     height: 0;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.05);
@@ -1211,11 +1221,11 @@ body::before {
     .creation-detail {
         grid-template-columns: 2fr 1fr;
     }
-    
+
     .creation-video {
         order: 1;
     }
-    
+
     .creation-info {
         order: 2;
     }
