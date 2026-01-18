@@ -5,7 +5,7 @@
       "title": "Mon premier mariage",
       "image": "images/mariage/2.png",
       "type": "photo",
-      "date": "2024",
+      "date": "2025",
       "description": "Description du projet photographique 01. Ce projet explore les différentes facettes de la photographie contemporaine."
     },
     {
@@ -13,24 +13,24 @@
       "title": "Côté Sushi",
       "image": "images/sushi/4.png",
       "type": "photo",
-      "date": "2024",
+      "date": "2025",
       "description": "Description du projet photographique 02. Une série de clichés capturant l'essence de moments uniques."
     },
     {
       "id": 103,
-      "title": "Projet photographique 03",
+      "title": "moment futile à Paris",
       "image": "images/paris/image2.png",
       "type": "photo",
-      "date": "2024",
-      "description": "Description du projet photographique 03. Exploration visuelle et narratives à travers l'objectif."
+      "date": "2025",
+      "description": "Cette photographie capture un instant du quotidien à Paris, où un passant traverse l’espace sans interaction avec son environnement. Le cadrage et le noir et blanc isole la silhouette, renforçant l’idée d’un moment simple, presque insignifiant, mais révélateur du rythme urbain. L’image s’attarde sur ce temps suspendu, entre mouvement et immobilité, qui compose la vie de la ville."
     },
     {
       "id": 104,
-      "title": "Projet photographique 04",
+      "title": "Regards ordinaires",
       "image": "images//paris/image3.png",
       "type": "photo",
-      "date": "2024",
-      "description": "Description du projet photographique 04. Une approche créative de la photographie documentaire."
+      "date": "2025",
+      "description": "Ce portrait s’inscrit dans une approche centrée sur la rencontre et l’instant. Sans mise en scène, laissant place à une expression naturelle. L’image cherche à montrer la singularité d’un individu à travers, un simple regard."
     },
     {
       "id": 201,
