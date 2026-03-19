@@ -35,6 +35,16 @@
       "platform": "youtube",
       "date": "2026",
       "description": "Pour mon dernier projet scolaire, j’ai réalisé un motion design destiné à être diffusé pendant un live. Mon travail consistait à créer une animation claire et dynamique pour présenter les règles du jeu qui intervient à un moment précis du direct. L’objectif était de rendre les consignes compréhensibles rapidement, tout en gardant un style visuel attractif et cohérent avec l’identité du live. "
+    },
+    {
+      "id": 5,
+      "title": "Interview Marcel ORSINI - OPUISSANCE4",
+      "url": "https://www.youtube.com/watch?v=exeMmh1-r4E",
+      "type": "video",
+      "platform": "youtube",  
+      "date": "2026",
+      "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo immersive pour mettre en avant l’entreprise. À travers différentes interviews, cette vidéo permet de découvrir les métiers, l’organisation ainsi que les valeurs de la structure. Ce projet m’a permis de développer mes compétences en tournage, cadrage et montage vidéo, tout en mettant en lumière une entreprise dynamique."
     }
+    
   ]
 }
