@@ -38,12 +38,21 @@
     },
     {
       "id": 5,
-      "title": "Interview Marcel ORSINI - OPUISSANCE4",
-      "url": "https://www.youtube.com/watch?v=exeMmh1-r4E",
+      "title": "CHARLES & GASPARD - OPUISSANCE4",
+      "url": "https://www.youtube.com/watch?v=ZQ2KsDM_Yzc",
       "type": "video",
       "platform": "youtube",  
       "date": "2026",
-      "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo immersive pour mettre en avant l’entreprise. À travers différentes interviews, cette vidéo permet de découvrir les métiers, l’organisation ainsi que les valeurs de la structure. Ce projet m’a permis de développer mes compétences en tournage, cadrage et montage vidéo, tout en mettant en lumière une entreprise dynamique."
+      "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo mettant en avant un projet de marquage de véhicule. Cette réalisation montre le visuel final."
+    },
+    {
+      "id": 6,
+      "title": "Hock'Bean Red Bears - OPUISSANCE4",
+      "url": "https://www.youtube.com/watch?v=HvBLU2QsORo",
+      "type": "video",
+      "platform": "youtube",  
+      "date": "2026",
+      "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo (edit) mettant en avant un projet de marquage de véhicule. Cette réalisation montre le visuel final."
     }
     
   ]
