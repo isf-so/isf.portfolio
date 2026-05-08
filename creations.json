@@ -11,12 +11,12 @@
     },
     {
       "id": 2,
-      "title": "Présentation EJDA Mulhouse",
+      "title": "Institution Sainte Jeanne d’Arc",
       "url": "https://www.youtube.com/watch?v=oCcRKK2gAqc",
       "type": "video",
       "platform": "youtube",
       "date": "2025",
-      "description": "Vidéo de présentation de l'École de Journalisme et de Design d'Actualité (EJDA) de Mulhouse. Ce projet présente l'établissement, ses formations et son environnement académique."
+      "description": "Réalisation d’une vidéo de présentation de l’Institution Sainte Jeanne d’Arc à Mulhouse, mettant en avant l’ensemble des classes et parcours de l’établissement, des plus petits aux plus grands, ainsi que son environnement éducatif et la vie scolaire."
     },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "title": "CHARLES & GASPARD - OPUISSANCE4",
       "url": "https://www.youtube.com/watch?v=ZQ2KsDM_Yzc",
       "type": "video",
-      "platform": "youtube",  
+      "platform": "youtube",
       "date": "2026",
       "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo mettant en avant un projet de marquage de véhicule. Cette réalisation montre le visuel final."
     },
@@ -50,10 +50,9 @@
       "title": "Hock'Bean Red Bears - OPUISSANCE4",
       "url": "https://www.youtube.com/watch?v=HvBLU2QsORo",
       "type": "video",
-      "platform": "youtube",  
+      "platform": "youtube",
       "date": "2026",
       "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo (edit) mettant en avant un projet de marquage de véhicule. Cette réalisation montre le visuel final."
     }
-    
   ]
 }
