@@ -27,7 +27,7 @@
     {
       "id": 104,
       "title": "Regards ordinaires",
-      "image": "images//paris/image3.png",
+      "image": "images/paris/image3.png",
       "type": "photo",
       "date": "2025",
       "description": "Ce portrait s’inscrit dans une approche centrée sur la rencontre et l’instant. Sans mise en scène, laissant place à une expression naturelle. L’image cherche à montrer la singularité d’un individu à travers, un simple regard."
@@ -39,6 +39,14 @@
       "type": "graphisme",
       "date": "2024",
       "description": "'Silence ça tourne' est un projet de direction artistique globale réalisé pour une agence fictive. L’objectif était de concevoir une identité visuelle cohérente et forte avec des contraintes imposées, sans refléter l’univers du cinéma et de la production vidéo."
+    },
+    {
+      "id": 202,
+      "title": "Honda",
+      "image": "images/voiture/honda.png",
+      "type": "photo",
+      "date": "2024",
+      "description": "J’ai eu l’opportunité de réaliser une série de photographies pour un test destiné à Honda. Ce projet m’a permis de mettre en avant mon regard créatif, Cette expérience m’a aussi aidé à développer mon sens du détail et mon approche professionnelle dans la photographie automobile."
     }
   ]
 }
