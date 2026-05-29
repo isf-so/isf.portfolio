@@ -53,6 +53,15 @@
       "platform": "youtube",
       "date": "2026",
       "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo (edit) mettant en avant un projet de marquage de véhicule. Cette réalisation montre le visuel final."
+    },
+    {
+      "id": 7,
+      "title": "#1 French NFC - Motion design",
+      "url": "https://youtube.com/watch?v=OPP8Yf21ig4",
+      "type": "video",
+      "platform": "youtube",
+      "date": "2026",
+      "description": "Dans le cadre de mon stage chez O Puissance 4, j’ai réalisé une vidéo (motion design) mettant en avant des produits."
     }
   ]
 }
