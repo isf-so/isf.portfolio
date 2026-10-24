@@ -248,6 +248,20 @@ footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 
 .acc.open .content{display:block}
 
+/* Cookies */
+.cookie-banner{position:fixed;left:20px;bottom:20px;z-index:70;max-width:440px;background:var(--bg2);border:1px solid var(--line);padding:24px 26px;animation:cIn .8s var(--ease) both;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.cookie-banner[hidden],.cookie-mini[hidden]{display:none}
+.cookie-banner h4{font-weight:500;font-size:.95rem;margin-bottom:8px}
+.cookie-banner p{color:var(--muted);font-size:.84rem;line-height:1.6;margin-bottom:18px}
+.cookie-banner p a{color:var(--text)}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cookie-actions .btn{padding:12px 18px;font-size:.6rem}
+.cookie-mini{position:fixed;right:20px;bottom:20px;z-index:70;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg2);display:flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer;animation:cIn .6s var(--ease) both;transition:color .4s,border-color .4s}
+.cookie-mini:hover{color:var(--text);border-color:var(--text)}
+.cookie-mini .ico{width:20px;height:20px}
+@keyframes cIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (max-width:760px){.cookie-banner{left:14px;right:14px;bottom:14px;max-width:none;padding:20px}.cookie-mini{right:14px;bottom:14px}}
+
 /* Mobile */
 @media (max-width:760px){
   header{padding:14px 20px}
@@ -274,6 +288,7 @@ footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cookie" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r=".9" fill="currentColor"/><circle cx="14.5" cy="14.5" r=".9" fill="currentColor"/><circle cx="10" cy="15.5" r=".9" fill="currentColor"/><circle cx="15.5" cy="9.5" r=".9" fill="currentColor"/></symbol>
   <symbol id="i-arr" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
   <symbol id="i-prev" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
   <symbol id="i-next" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
@@ -496,7 +511,7 @@ footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
       <h3>Droits sur les contenus</h3>
       <p>Les photographies et vidéos présentées sur ce site sont protégées par le droit d'auteur. Elles ne sont pas libres de droits. Toute reproduction, téléchargement, modification ou utilisation, même partielle, est interdite sans accord écrit préalable. Les textes, la mise en page et les éléments graphiques du site sont également protégés.</p>
       <h3>Confidentialité</h3>
-      <p>Ce site ne demande aucun compte et n'utilise ni cookies publicitaires ni outil de mesure d'audience. Les seules informations transmises sont celles que vous m'envoyez volontairement par e-mail, utilisées uniquement pour répondre à votre demande. Les polices de caractères sont chargées depuis les serveurs de Google Fonts, ce qui transmet votre adresse IP à Google. Vous pouvez me demander à tout moment la suppression de nos échanges.</p>
+      <p>Un bandeau vous demande votre accord avant toute mesure de fréquentation. Si vous acceptez, un cookie « sg_consent » mémorise votre choix pendant 6 mois, et une information de visite (page consultée, date, langue, taille d'écran) est transmise pour suivre la fréquentation du site. Si vous refusez, rien n'est transmis, et vous pouvez changer d'avis à tout moment via le petit bouton cookie en bas à droite. Les polices de caractères sont chargées depuis les serveurs de Google Fonts, ce qui transmet votre adresse IP à Google. Les échanges par e-mail ne sont utilisés que pour répondre à votre demande, et supprimés sur simple demande.</p>
       <h3>Tarifs</h3>
       <p>Les tarifs affichés sont indicatifs. Un devis personnalisé est établi sur demande.</p>
       <p class="upd">Mise à jour : octobre 2026</p>
@@ -533,6 +548,19 @@ footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
   </div>
   <div class="lb-foot" id="lb-foot"></div>
 </div>
+
+<!-- Bandeau cookies -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" hidden>
+  <h4 id="cookie-title">Cookies</h4>
+  <p>Ce site utilise des cookies pour mesurer sa fréquentation et améliorer votre visite. Vous pouvez accepter, refuser, ou changer d'avis à tout moment. Plus de détails dans <a href="#mentions">mentions légales &amp; confidentialité</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn solid" id="cookie-accept" type="button">Accepter</button>
+    <button class="btn" id="cookie-refuse" type="button">Refuser</button>
+  </div>
+</div>
+<button class="cookie-mini" id="cookie-mini" type="button" aria-label="Gérer les cookies" title="Gérer les cookies" hidden>
+  <svg class="ico"><use href="#i-cookie"/></svg>
+</button>
 
 <script>
 (function(){
@@ -786,6 +814,57 @@ footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
       if (e.key === "Enter" || e.key === " "){ e.preventDefault(); toggle(); }
     });
   });
+
+  /* ============ Cookies & visites ============
+     VISIT_ENDPOINT : adresse d'un service qui envoie un mail (ex. Formspree, Make, Zapier).
+     Laisser vide tant que le service n'est pas créé : rien n'est envoyé. */
+  var VISIT_ENDPOINT = "";
+
+  function getCookie(name){
+    var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+  function setCookie(name, value, days){
+    var d = new Date(); d.setTime(d.getTime() + days * 864e5);
+    document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + d.toUTCString() + ";path=/;SameSite=Lax";
+  }
+  function trackVisit(){
+    if (!VISIT_ENDPOINT) return;
+    try {
+      fetch(VISIT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          sujet: "Nouvelle visite sur le site",
+          page: location.hash || "#accueil",
+          date: new Date().toLocaleString("fr-FR"),
+          langue: navigator.language,
+          ecran: window.innerWidth + "x" + window.innerHeight
+        }),
+        keepalive: true
+      }).catch(function(){});
+    } catch(e) {}
+  }
+
+  var banner = document.getElementById("cookie-banner");
+  var mini = document.getElementById("cookie-mini");
+  document.getElementById("cookie-accept").addEventListener("click", function(){
+    setCookie("sg_consent", "accepted", 180);
+    banner.hidden = true; mini.hidden = true;
+    trackVisit();
+  });
+  document.getElementById("cookie-refuse").addEventListener("click", function(){
+    setCookie("sg_consent", "refused", 180);
+    banner.hidden = true; mini.hidden = false;
+  });
+  mini.addEventListener("click", function(){
+    banner.hidden = false; mini.hidden = true;
+  });
+
+  var choice = getCookie("sg_consent");
+  if (choice === "accepted") { trackVisit(); }
+  else if (choice === "refused") { mini.hidden = false; }
+  else { setTimeout(function(){ banner.hidden = false; }, 1200); }
 
   /* ============ Chargement ============ */
   var loader = document.getElementById("loader");
